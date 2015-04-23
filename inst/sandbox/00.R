@@ -1,10 +1,9 @@
 
-library(devtools)
-library(htmlwidgets)
+#library(devtools)
+#library(htmlwidgets)
+#document()
+#devtools::install()
 
-
-document()
-devtools::install()
 library(d3plus)
 
 library(readr)
