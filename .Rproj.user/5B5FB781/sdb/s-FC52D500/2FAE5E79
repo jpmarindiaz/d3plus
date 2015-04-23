@@ -1,0 +1,17 @@
+{
+    "contents" : "\nlibrary(devtools)\nlibrary(htmlwidgets)\n\n\ndocument()\ndevtools::install()\nlibrary(d3plus)\n\nlibrary(readr)\ndata <- read_csv(\"inst/data/electricity-expenses.csv\")\nd3plusLines(data)\n\n\ndata <- read.csv(\"inst/data/cab-inf-countries.csv\")\nd3plusScatter(data)\n\n\nedges <- read.csv(\"inst/data/edges.csv\")\nnodes <- read.csv(\"inst/data/nodes.csv\")\n\nedges$label <- paste(edges$source, edges$target, sep = \"-\")\n\nd3plusRings(edges,nodes)\nd3plusRings(edges)\n\nd3plusNetwork(edges,nodes)\nd3plusNetwork(edges)\n\n\n\n\n\n",
+    "created" : 1429285999786.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1071167247",
+    "id" : "2FAE5E79",
+    "lastKnownWriteTime" : 1429824969,
+    "path" : "~/jprepo/d3plus/inst/sandbox/00.R",
+    "project_path" : "inst/sandbox/00.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

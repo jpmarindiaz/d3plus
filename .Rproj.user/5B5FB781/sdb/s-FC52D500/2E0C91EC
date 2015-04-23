@@ -1,0 +1,18 @@
+{
+    "contents" : "#' <Add Title>\n#'\n#' <Add Description>\n#'\n#' @import htmlwidgets\n#'\n#' @export\nd3plusLines <- function(data, options = list(),\n                          width = NULL, height = NULL) {\n  xAxis <- names(data)[1]\n  data <- reshape2::melt(data,id = \"Year\")\n  id <- \"variable\"\n  value <- \"value\"\n\n  settings <- list(\n    id = id,\n    xAxis = xAxis,\n    value = value\n  )\n  # pass the data and settings using 'x'\n  x <- list(\n    data = data,\n    settings = settings\n  )\n\n  name <- \"d3plusLines\"\n  # create widget\n  htmlwidgets::createWidget(\n    name = name,\n    x,\n    width = width,\n    height = height,\n    package = 'd3plus',\n    sizingPolicy = htmlwidgets::sizingPolicy(\n      viewer.padding = 0,\n      browser.fill = TRUE\n    )\n  )\n}\n\n#' Widget output function for use in Shiny\n#'\n#' @export\nd3plusLinesOutput <- function(outputId, width = '100%', height = '500px'){\n  shinyWidgetOutput(outputId, 'd3plusLines', width, height, package = 'd3plus')\n}\n\n#' Widget render function for use in Shiny\n#'\n#' @export\nrenderD3plusLines <- function(expr, env = parent.frame(), quoted = FALSE) {\n  if (!quoted) { expr <- substitute(expr) } # force quoted\n  shinyRenderWidget(expr, d3plusLinesOutput, env, quoted = TRUE)\n}\n",
+    "created" : 1429818681129.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1957788655",
+    "id" : "2E0C91EC",
+    "lastKnownWriteTime" : 1429826477,
+    "path" : "~/jprepo/d3plus/R/d3plusLines.R",
+    "project_path" : "R/d3plusLines.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
