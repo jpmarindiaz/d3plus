@@ -9,16 +9,12 @@ HTMLWidgets.widget({
     },
 
     resize: function(el, width, height, instance) {
-
         // instance.draw();
     },
 
     renderValue: function(el, x, instance) {
 
-        var vizId = "viz" + Math.random().toString(36).substr(2, 5);
-
-        d3.select(el).append("div")
-            .attr('id', vizId);
+        var vizId = el.id;
 
         var sample_data = HTMLWidgets.dataframeToD3(x.data);
 

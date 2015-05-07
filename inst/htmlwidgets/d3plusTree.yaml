@@ -1,0 +1,11 @@
+dependencies:
+  - name: d3
+    version: 3.5.5
+    src: "htmlwidgets/lib/d3-v3.5.5"
+    script: d3.js
+  - name: d3plus
+    version: 1.7.1
+    src: "htmlwidgets/lib/d3plus-v1.7.1"
+    script: d3plus.js
+
+
