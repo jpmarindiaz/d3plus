@@ -1,5 +1,5 @@
 #' @export
-cleanGraph <- function(edges, nodes){
+cleanGraph <- function(edges, nodes = NULL){
   if (is.null(edges)){
     stop("Must specify edges as dataframe")
   }

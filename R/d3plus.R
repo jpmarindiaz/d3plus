@@ -5,14 +5,15 @@
 #' @import htmlwidgets
 #'
 #' @export
-d3plus <- function(data, type, width = NULL, height = NULL) {
+d3plus <- function(type, data, width = NULL, height = NULL,...) {
 
-  data <- getData(data, type)
-  settings <- getSettings(data, type, opts)
+  data <- getData(type, data, ...)
+  settings <- getSettings(type,data, ...)
   # pass the data and settings using 'x'
   x <- list(
     data = data,
-    settings = settings
+    settings = settings,
+    d3plusType = type
   )
 
   htmlwidgets::createWidget(

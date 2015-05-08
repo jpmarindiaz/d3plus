@@ -6,12 +6,32 @@ devtools::install()
 
 library(d3plus)
 
+edges <- read.csv("inst/data/edges.csv")
+nodes <- read.csv("inst/data/nodes.csv")
+
+d3plus("rings",edges)
+d3plus("rings", edges, focusDropdown = TRUE)
+d3plus("rings", edges, nodes = nodes,focusDropdown = TRUE)
+
+
+d3plus("network", edges)
+d3plus("network",edges,nodes = nodes)
+
+
 data <- tblpkg::sampleData("CNN")
-type <- "tree"
-d3plus(data,"tree")
+d3plus("scatter", data)
+
+data <- tblpkg::sampleData("CCN")
+data <- tblpkg::sampleData("CCN1")
+d3plus("bubbles", data)
+
+data <- tblpkg::sampleData("CNN")
+d3plus("tree", data[c(1,3,2)])
 
 data <- tblpkg::sampleData("DNNNN")
-d3plus(data,"lines")
+d3plus("lines", data)
+
+
 
 
 library(shiny)
@@ -27,7 +47,7 @@ app <- shinyApp(
       if(input$swapNCols){
         d <- d[c(1,3,2)]
       }
-      d3plus(d,"tree")
+      d3plus("tree",d)
     })
   }
 )

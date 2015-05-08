@@ -4,7 +4,7 @@
 \alias{d3plus}
 \title{<Add Title>}
 \usage{
-d3plus(data, type, width = NULL, height = NULL)
+d3plus(type, data, width = NULL, height = NULL, ...)
 }
 \description{
 <Add Description>
