@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="author" content="jpmarindiaz" />
+
+
+<title>d3plus examples</title>
+
+<script src="examples_files/jquery-1.11.0/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="examples_files/bootstrap-3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+<script src="examples_files/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+<script src="examples_files/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
+<script src="examples_files/bootstrap-3.3.1/shim/respond.min.js"></script>
+<script src="examples_files/htmlwidgets-0.3.3/htmlwidgets.js"></script>
+<script src="examples_files/d3-3.5.5/d3.js"></script>
+<script src="examples_files/d3plus-1.7.1/d3plus.js"></script>
+<script src="examples_files/d3plus-funs-0.0.1/d3plus-funs.js"></script>
+<script src="examples_files/d3plus-binding-0.0.1/d3plus.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet"
+      href="examples_files/highlight/default.css"
+      type="text/css" />
+<script src="examples_files/highlight/highlight.js"></script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img { 
+  max-width:100%; 
+  height: auto; 
+}
+</style>
+<div class="container-fluid main-container">
+
+
+<div id="header">
+<h1 class="title">d3plus examples</h1>
+<h4 class="author"><em>jpmarindiaz</em></h4>
+<h4 class="date"><em>May 7, 2015</em></h4>
+</div>
+
+
+<pre class="r"><code>library(d3plus)</code></pre>
+<pre><code>## Loading required package: reshape2
+## Loading required package: htmlwidgets</code></pre>
+<pre class="r"><code># Some networks
+edges &lt;- read.csv(system.file(&quot;data/edges.csv&quot;, package = &quot;d3plus&quot;))
+nodes &lt;- read.csv(system.file(&quot;data/nodes.csv&quot;, package = &quot;d3plus&quot;))
+d3plus(&quot;rings&quot;,edges)</code></pre>
+<pre><code>## No nodes provided: taking nodes from edges list
+## No node x position provided: using automatic
+## No node size provided: using random value
+## No edge size provided: using 1
+## No label provided</code></pre>
+<p><div id="htmlwidget-4008" style="width:672px;height:480px;" class="d3plus"></div>
+<script type="application/json" data-for="htmlwidget-4008">{"x":{"data":{"nodes":{"id":["alpha","beta","zeta","theta","eta","gamma","delta","epsilon"],"size":[1,1,1,1,1,1,1,1]},"edges":{"source":["alpha","alpha","beta","beta","zeta","theta","eta"],"target":["beta","gamma","delta","epsilon","gamma","gamma","gamma"],"size":[1,1,1,1,1,1,1],"label":["","","","","","",""]},"positions":false},"settings":{"drawEdges":true,"drawNodes":true,"focusDropdown":false},"d3plusType":"rings"},"evals":[]}</script></p>
+<pre class="r"><code>d3plus(&quot;rings&quot;, edges, focusDropdown = TRUE)</code></pre>
+<pre><code>## No nodes provided: taking nodes from edges list
+## No node x position provided: using automatic
+## No node size provided: using random value
+## No edge size provided: using 1
+## No label provided</code></pre>
+<p><div id="htmlwidget-6983" style="width:672px;height:480px;" class="d3plus"></div>
+<script type="application/json" data-for="htmlwidget-6983">{"x":{"data":{"nodes":{"id":["alpha","beta","zeta","theta","eta","gamma","delta","epsilon"],"size":[1,1,1,1,1,1,1,1]},"edges":{"source":["alpha","alpha","beta","beta","zeta","theta","eta"],"target":["beta","gamma","delta","epsilon","gamma","gamma","gamma"],"size":[1,1,1,1,1,1,1],"label":["","","","","","",""]},"positions":false},"settings":{"drawEdges":true,"drawNodes":true,"focusDropdown":true},"d3plusType":"rings"},"evals":[]}</script></p>
+<pre class="r"><code>d3plus(&quot;rings&quot;, edges, nodes = nodes,focusDropdown = TRUE)</code></pre>
+<pre><code>## No node x position provided: using automatic
+## No edge size provided: using 1
+## No label provided</code></pre>
+<p><div id="htmlwidget-633" style="width:672px;height:480px;" class="d3plus"></div>
+<script type="application/json" data-for="htmlwidget-633">{"x":{"data":{"nodes":{"id":["alpha","beta","gamma","delta","epsilon","zeta","theta","eta"],"size":[10,12,30,26,12,26,11,24]},"edges":{"source":["alpha","alpha","beta","beta","zeta","theta","eta"],"target":["beta","gamma","delta","epsilon","gamma","gamma","gamma"],"size":[1,1,1,1,1,1,1],"label":["","","","","","",""]},"positions":false},"settings":{"drawEdges":true,"drawNodes":true,"focusDropdown":true},"d3plusType":"rings"},"evals":[]}</script></p>
+<pre class="r"><code>d3plus(&quot;network&quot;, edges)</code></pre>
+<pre><code>## No nodes provided: taking nodes from edges list
+## No node x position provided: using automatic
+## No node size provided: using random value
+## No edge size provided: using 1
+## No label provided</code></pre>
+<p><div id="htmlwidget-2894" style="width:672px;height:480px;" class="d3plus"></div>
+<script type="application/json" data-for="htmlwidget-2894">{"x":{"data":{"nodes":{"id":["alpha","beta","zeta","theta","eta","gamma","delta","epsilon"],"size":[1,1,1,1,1,1,1,1]},"edges":{"source":["alpha","alpha","beta","beta","zeta","theta","eta"],"target":["beta","gamma","delta","epsilon","gamma","gamma","gamma"],"size":[1,1,1,1,1,1,1],"label":["","","","","","",""]},"positions":false},"settings":{"drawEdges":true,"drawNodes":true,"focusDropdown":false},"d3plusType":"network"},"evals":[]}</script></p>
+<pre class="r"><code>d3plus(&quot;network&quot;,edges,nodes = nodes)</code></pre>
+<pre><code>## No node x position provided: using automatic
+## No edge size provided: using 1
+## No label provided</code></pre>
+<p><div id="htmlwidget-8652" style="width:672px;height:480px;" class="d3plus"></div>
+<script type="application/json" data-for="htmlwidget-8652">{"x":{"data":{"nodes":{"id":["alpha","beta","gamma","delta","epsilon","zeta","theta","eta"],"size":[10,12,30,26,12,26,11,24]},"edges":{"source":["alpha","alpha","beta","beta","zeta","theta","eta"],"target":["beta","gamma","delta","epsilon","gamma","gamma","gamma"],"size":[1,1,1,1,1,1,1],"label":["","","","","","",""]},"positions":false},"settings":{"drawEdges":true,"drawNodes":true,"focusDropdown":false},"d3plusType":"network"},"evals":[]}</script></p>
+<pre class="r"><code># A scatter plot
+countries &lt;- read.csv(system.file(&quot;data/countries.csv&quot;, package = &quot;d3plus&quot;))
+d3plus(&quot;scatter&quot;, countries)</code></pre>
+<p><div id="htmlwidget-9689" style="width:672px;height:480px;" class="d3plus"></div>
+<script type="application/json" data-for="htmlwidget-9689">{"x":{"data":{"País":["Brazil","Colombia","Indonesia","India","Mexico","Russian Federation"],"CAB":[635,209,868,776,471,511],"INF":[7.62,1.52,4.35,6.25,2.04,5.89]},"settings":{"id":"País","xAxis":"CAB","yAxis":"INF"},"d3plusType":"scatter"},"evals":[]}</script></p>
+<pre class="r"><code># Grouping bubbles
+bubbles &lt;- read.csv(system.file(&quot;data/bubbles.csv&quot;, package = &quot;d3plus&quot;))
+d3plus(&quot;bubbles&quot;, bubbles)</code></pre>
+<p><div id="htmlwidget-71" style="width:672px;height:480px;" class="d3plus"></div>
+<script type="application/json" data-for="htmlwidget-71">{"x":{"data":{"name":["alpha","beta","gamma","delta","epsilon","zeta"],"group":["group 1","group 2","group 2","group 2","group 1","group 1"],"value":[100,70,40,15,5,1]},"settings":{"data_names":{"id":"name","group":"group","value":"value"}},"d3plusType":"bubbles"},"evals":[]}</script></p>
+<pre class="r"><code># Some treemaps
+d3plus(&quot;tree&quot;, countries)</code></pre>
+<p><div id="htmlwidget-5879" style="width:672px;height:480px;" class="d3plus"></div>
+<script type="application/json" data-for="htmlwidget-5879">{"x":{"data":{"País":["Brazil","Colombia","Indonesia","India","Mexico","Russian Federation"],"CAB":[635,209,868,776,471,511],"INF":[7.62,1.52,4.35,6.25,2.04,5.89]},"settings":{"data_names":{"id":"País","size":"CAB","color":"INF"}},"d3plusType":"tree"},"evals":[]}</script></p>
+<pre class="r"><code>d3plus(&quot;tree&quot;, bubbles[c(&quot;name&quot;,&quot;value&quot;)])</code></pre>
+<p><div id="htmlwidget-7254" style="width:672px;height:480px;" class="d3plus"></div>
+<script type="application/json" data-for="htmlwidget-7254">{"x":{"data":{"name":["alpha","beta","gamma","delta","epsilon","zeta"],"value":[100,70,40,15,5,1]},"settings":{"data_names":{"id":"name","size":"value"}},"d3plusType":"tree"},"evals":[]}</script></p>
+<pre class="r"><code># Some lines
+## Not working
+#data &lt;- read.csv(system.file(&quot;data/expenses&quot;, package = &quot;d3plus&quot;))
+#d3plus(&quot;lines&quot;, data)
+
+# Saving widgets
+s &lt;- d3plus(&quot;tree&quot;, countries)
+htmlwidgets::saveWidget(s,&quot;index.html&quot;, selfcontained = FALSE)
+## Selfcontained= TRUE not working
+# htmlwidgets::saveWidget(s,&quot;index.html&quot;)</code></pre>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

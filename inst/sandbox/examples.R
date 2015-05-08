@@ -1,13 +1,9 @@
-> Warning: Alpha release. This is work in progress. Use at own risk.
 
-# Install
+# library(devtools)
+# library(htmlwidgets)
+# document()
+# devtools::install()
 
-`devtools::install_github("jpmarindiaz/d3plus")`
-
-
-# Examples
-
-```r
 library(d3plus)
 
 # Some networks
@@ -63,11 +59,10 @@ app <- shinyApp(
 )
 runApp(app)
 
-```
 
-# Todo
 
-- make sure column names are source and target for networks
-- validate cols
-- Lines only working when date is Year... for now
+
+
+
+
 

@@ -1,13 +1,13 @@
-> Warning: Alpha release. This is work in progress. Use at own risk.
+---
+title: "d3plus examples"
+author: "jpmarindiaz"
+date: "May 7, 2015"
+output: 
+  html_document:
+    self_contained: FALSE
+---
 
-# Install
-
-`devtools::install_github("jpmarindiaz/d3plus")`
-
-
-# Examples
-
-```r
+```{r}
 library(d3plus)
 
 # Some networks
@@ -43,31 +43,6 @@ htmlwidgets::saveWidget(s,"index.html", selfcontained = FALSE)
 # htmlwidgets::saveWidget(s,"index.html")
 
 
-# A nice shiny app
-library(shiny)
-app <- shinyApp(
-  ui = bootstrapPage(
-    checkboxInput("swapNCols","Swap columns",value=FALSE),
-    d3plusOutput("viz")
-  ),
-  server = function(input, output) {
-    countries <- read.csv(system.file("data/countries.csv", package = "d3plus"))
-    output$viz <- renderD3plus({
-      d <- countries
-      if(input$swapNCols){
-        d <- d[c(1,3,2)]
-      }
-      d3plus("tree",d)
-    })
-  }
-)
-runApp(app)
-
 ```
 
-# Todo
-
-- make sure column names are source and target for networks
-- validate cols
-- Lines only working when date is Year... for now
 
