@@ -9,8 +9,7 @@ library(d3plus)
 # Saving widgets
 s <- d3plus("tree", countries)
 htmlwidgets::saveWidget(s,"index.html", selfcontained = FALSE)
-## Selfcontained= TRUE not working
-# htmlwidgets::saveWidget(s,"index.html")
+htmlwidgets::saveWidget(s,"index.html")
 
 
 # Some lines
