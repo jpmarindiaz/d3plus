@@ -98,8 +98,6 @@ HTMLWidgets.widget({
             var xAxis = x.settings.xAxis;
             var yAxis = x.settings.yAxis;
             var size = x.settings.size;
-            if(size == "null") size = null;
-            console.log(x.settings)
             d3plus
                 .container("#" + vizId) // container DIV to hold the visualization
                 .data(sample_data) // data to use with the visualization

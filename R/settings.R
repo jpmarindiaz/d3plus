@@ -54,6 +54,7 @@ getSettings <- function(type, data,...){
     xAxis <- names(data)[axis[1]]
     yAxis <- names(data)[axis[2]]
     size <- names(data)[4]
+    size <- size %||% FALSE
 
     settings <- list(
       id = id,
