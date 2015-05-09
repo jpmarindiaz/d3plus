@@ -4,7 +4,7 @@ getData <- function(type,data, ...){
     data <- data
   }
   if(type == "lines"){
-    data <- reshape2::melt(data,id = "Year")
+    data <- reshape2::melt(data,id = 1)
   }
   if(type %in% c("network","rings")){
     if(is.null(args$nodes))

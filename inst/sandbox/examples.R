@@ -1,10 +1,14 @@
 
-# library(devtools)
-# library(htmlwidgets)
-# document()
-# devtools::install()
+library(devtools)
+library(htmlwidgets)
+document()
+devtools::install()
 
 library(d3plus)
+
+# Some lines
+data <- read.csv(system.file("data/expenses.csv", package = "d3plus"))
+d3plus("lines", data)
 
 # Some networks
 edges <- read.csv(system.file("data/edges.csv", package = "d3plus"))
@@ -30,10 +34,7 @@ d3plus("bubbles", bubbles)
 d3plus("tree", countries)
 d3plus("tree", bubbles[c("name","value")])
 
-# Some lines
-## Not working
-#data <- read.csv(system.file("data/expenses", package = "d3plus"))
-#d3plus("lines", data)
+
 
 # Saving widgets
 s <- d3plus("tree", countries)
