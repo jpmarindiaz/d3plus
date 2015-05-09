@@ -97,6 +97,9 @@ HTMLWidgets.widget({
             var id = x.settings.id;
             var xAxis = x.settings.xAxis;
             var yAxis = x.settings.yAxis;
+            var size = x.settings.size;
+            if(size == "null") size = null;
+            console.log(x.settings)
             d3plus
                 .container("#" + vizId) // container DIV to hold the visualization
                 .data(sample_data) // data to use with the visualization
@@ -104,6 +107,7 @@ HTMLWidgets.widget({
                 .id(id) // key for which our data is unique on
                 .x(xAxis) // key for x-axis
                 .y(yAxis) // key for y-axis
+                .size(size)
                 .draw()
             }
 

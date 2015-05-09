@@ -53,10 +53,13 @@ getSettings <- function(type, data,...){
     id <- names(data)[1]
     xAxis <- names(data)[axis[1]]
     yAxis <- names(data)[axis[2]]
+    size <- names(data)[4]
+
     settings <- list(
       id = id,
       xAxis = xAxis,
-      yAxis = yAxis
+      yAxis = yAxis,
+      size = size
     )
   }
   if(type %in% c("network","rings")){

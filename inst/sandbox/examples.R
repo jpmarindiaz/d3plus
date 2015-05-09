@@ -18,6 +18,9 @@ d3plus("network",edges,nodes = nodes)
 # A scatter plot
 countries <- read.csv(system.file("data/countries.csv", package = "d3plus"))
 d3plus("scatter", countries)
+countries$big <- ceiling(10*runif(1:nrow(countries)))
+d3plus("scatter", countries)
+
 
 # Grouping bubbles
 bubbles <- read.csv(system.file("data/bubbles.csv", package = "d3plus"))
