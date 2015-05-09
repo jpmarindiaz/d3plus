@@ -6,6 +6,13 @@ devtools::install()
 
 library(d3plus)
 
+# Saving widgets
+s <- d3plus("tree", countries)
+htmlwidgets::saveWidget(s,"index.html", selfcontained = FALSE)
+## Selfcontained= TRUE not working
+# htmlwidgets::saveWidget(s,"index.html")
+
+
 # Some lines
 data <- read.csv(system.file("data/expenses.csv", package = "d3plus"))
 d3plus("lines", data)
@@ -36,11 +43,7 @@ d3plus("tree", bubbles[c("name","value")])
 
 
 
-# Saving widgets
-s <- d3plus("tree", countries)
-htmlwidgets::saveWidget(s,"index.html", selfcontained = FALSE)
-## Selfcontained= TRUE not working
-# htmlwidgets::saveWidget(s,"index.html")
+
 
 
 # A nice shiny app
