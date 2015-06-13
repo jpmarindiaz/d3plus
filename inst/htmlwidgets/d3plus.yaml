@@ -4,9 +4,9 @@ dependencies:
     src: "htmlwidgets/lib/d3-v3.5.5"
     script: d3.min.js
   - name: d3plus
-    version: 1.7.1
-    src: "htmlwidgets/lib/d3plus-v1.7.1"
-    script: d3plus.js
+    version: 1.7.3
+    src: "htmlwidgets/lib/d3plus-v1.7.3"
+    script: d3plus.min.js
   - name: d3plus-funs
     version: 0.0.1
     src: "htmlwidgets/lib/d3plus-funs"

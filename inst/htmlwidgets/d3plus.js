@@ -88,7 +88,7 @@ HTMLWidgets.widget({
                 .id([group, id]) // nesting keys
                 .depth(1)              // 0-based depth
                 .size(value)         // key name to size bubbles
-                .color(group)        // color by each group
+                .color(id)        // color by each group
                 .draw()
             }
 

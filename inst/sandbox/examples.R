@@ -2,14 +2,26 @@
 library(devtools)
 library(htmlwidgets)
 document()
+load_all()
 devtools::install()
 
 library(d3plus)
+
+
+# Grouping bubbles 2
 
 # Saving widgets
 s <- d3plus("tree", countries)
 htmlwidgets::saveWidget(s,"index.html", selfcontained = FALSE)
 htmlwidgets::saveWidget(s,"index.html")
+
+
+# Grouping bubbles
+bubbles <- read.csv(system.file("data/bubbles.csv", package = "d3plus"))
+d3plus("bubbles", bubbles)
+bubbles <- read.csv(system.file("data/senado-tlc-corea.csv", package = "d3plus"))
+d3plus("bubbles", bubbles)
+d3plus("bubbles", bubbles[c(2,1,3)])
 
 
 # Some lines
@@ -32,9 +44,7 @@ countries$big <- ceiling(10*runif(1:nrow(countries)))
 d3plus("scatter", countries)
 
 
-# Grouping bubbles
-bubbles <- read.csv(system.file("data/bubbles.csv", package = "d3plus"))
-d3plus("bubbles", bubbles)
+
 
 # Some treemaps
 d3plus("tree", countries)
