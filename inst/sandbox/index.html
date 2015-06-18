@@ -1,19 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8"/>
-<script src="index_files/htmlwidgets-0.3.3/htmlwidgets.js"></script>
-<script src="index_files/d3-3.5.5/d3.js"></script>
-<script src="index_files/d3plus-1.7.1/d3plus.js"></script>
-<script src="index_files/d3plus-funs-0.0.1/d3plus-funs.js"></script>
-<script src="index_files/d3plus-binding-0.0.1/d3plus.js"></script>
 
-</head>
-<body style="background-color:white;">
-<div id="htmlwidget_container">
-  <div id="htmlwidget-1845" style="width:960px;height:500px;" class="d3plus"></div>
-</div>
-<script type="application/json" data-for="htmlwidget-1845">{"x":{"data":{"País":["Brazil","Colombia","Indonesia","India","Mexico","Russian Federation"],"CAB":[635,209,868,776,471,511],"INF":[7.62,1.52,4.35,6.25,2.04,5.89]},"settings":{"data_names":{"id":"País","size":"CAB","color":"INF"}},"d3plusType":"tree"},"evals":[]}</script>
-<script type="application/htmlwidget-sizing" data-for="htmlwidget-1845">{"viewer":{"width":450,"height":350,"padding":0,"fill":true},"browser":{"width":960,"height":500,"padding":40,"fill":true}}</script>
-</body>
-</html>
+<!doctype html>
+<meta charset="utf-8">
+
+<!-- load D3js -->
+<script src="http://www.d3plus.org/js/d3.js"></script>
+
+<!-- load D3plus after D3js -->
+<script src="http://www.d3plus.org/js/d3plus.js"></script>
+
+<!-- create container element for visualization -->
+<div id="viz"></div>
+
+<script>
+
+  // sample data array
+  var sample_data = [{"id":"Polo","group":"Contra el Gobierno","value":3},{"id":"Alianza Verde","group":"Contra el Gobierno","value":5},{"id":"Opción Ciudadana","group":"A favor del Gobierno","value":2},{"id":"Liberal","group":"Contra el Gobierno","value":1},{"id":"Liberal","group":"A favor del Gobierno","value":7},{"id":"Cambio Radical","group":"Contra el Gobierno","value":1},{"id":"Cambio Radical","group":"A favor del Gobierno","value":6},{"id":"La U","group":"Contra el Gobierno","value":2},{"id":"La U","group":"A favor del Gobierno","value":15},{"id":"Conservador","group":"A favor del Gobierno","value":13},{"id":"Centro Democrático","group":"A favor del Gobierno","value":15},{"id":"ASI","group":"Contra el Gobierno","value":1}]
+  var attributes = [{"id":"Polo","color":"#E41A1C"},{"id":"Alianza Verde","color":"#377EB8"},{"id":"Opción Ciudadana","color":"#4DAF4A"},{"id":"Liberal","color":"#984EA3"},{"id":"Cambio Radical","color":"#FF7F00"},{"id":"La U","color":"#FFFF33"},{"id":"Conservador","color":"#A65628"},{"id":"Centro Democrático","color":"#F781BF"},{"id":"ASI","color":"#999999"}];
+
+  // instantiate d3plus
+  var visualization = d3plus.viz()
+    .container("#viz")     // container DIV to hold the visualization
+    .data(sample_data)     // data to use with the visualization
+    .type("bubbles")       // visualization type
+    .id(["group", "id"]) // nesting keys
+    .depth(1)              // 0-based depth
+    .size("value")         // key name to size bubbles
+    .attrs(attributes)
+    .color("color")
+    // .color("id")        // color by each group
+    .draw()                // finally, draw the visualization!
+
+</script>

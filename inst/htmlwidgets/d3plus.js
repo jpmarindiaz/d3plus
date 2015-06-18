@@ -76,20 +76,36 @@ HTMLWidgets.widget({
 
         function draw_bubbles(el, x, d3plus){
             var sample_data = HTMLWidgets.dataframeToD3(x.data);
-            console.log(x.settings.data_names)
+            console.log("SETTINGS\n",x.settings)
             var id = x.settings.data_names.id;
             var value = x.settings.data_names.value;
             var group = x.settings.data_names.group;
+            var attributes = HTMLWidgets.dataframeToD3(x.settings.attributes);
+            console.log("ATTRIBUTES\n",attributes)
 
-            d3plus
-                .container("#" + vizId) // container DIV to hold the visualization
-                .data(sample_data) // data to use with the visualization
-                .type("bubbles")       // visualization type
-                .id([group, id]) // nesting keys
-                .depth(1)              // 0-based depth
-                .size(value)         // key name to size bubbles
-                .color(id)        // color by each group
-                .draw()
+            if(attributes.length > 0){
+                d3plus
+                    .container("#" + vizId) // container DIV to hold the visualization
+                    .data(sample_data) // data to use with the visualization
+                    .type("bubbles")       // visualization type
+                    .id([group, id]) // nesting keys
+                    .depth(1)              // 0-based depth
+                    .size(value)         // key name to size bubbles
+                    .attrs(attributes)
+                    .color("color")
+                    .draw()
+            } 
+            else{                
+                d3plus
+                    .container("#" + vizId) // container DIV to hold the visualization
+                    .data(sample_data) // data to use with the visualization
+                    .type("bubbles")       // visualization type
+                    .id([group, id]) // nesting keys
+                    .depth(1)              // 0-based depth
+                    .size(value)         // key name to size bubbles
+                    .color(id)        // color by each group
+                    .draw()
+                }
             }
 
         function draw_scatter(el,x,d3plus){

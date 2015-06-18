@@ -8,7 +8,12 @@ devtools::install()
 library(d3plus)
 
 
-# Grouping bubbles 2
+# Grouping bubbles with color
+bubbles <- read.csv(system.file("data/senado-tlc-corea.csv", package = "d3plus"))
+bubbles <- bubbles[c(2,1,3)]
+attributes <- data.frame(Partido = unique(bubbles$Partido),
+                         color = RColorBrewer::brewer.pal(9,"Set1"))
+d3plus("bubbles", bubbles, attributes = attributes)
 
 # Saving widgets
 s <- d3plus("tree", countries)

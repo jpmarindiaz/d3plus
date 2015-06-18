@@ -19,6 +19,7 @@ getData <- function(type,data, ...){
 getSettings <- function(type, data,...){
   args <- list(...)
   focusDropdown <- args$focusDropdown %||% FALSE
+  attributes <- args$attributes %||% NULL
 
   if(type == "tree"){
     vars <- c("id","size","color") # add vars to opts
@@ -45,7 +46,8 @@ getSettings <- function(type, data,...){
     data_names <- as.list(names(data))
     names(data_names) <- vars
     settings <- list(
-      data_names = data_names
+      data_names = data_names,
+      attributes = attributes
     )
   }
   if(type == "scatter"){
