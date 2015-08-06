@@ -7,6 +7,15 @@ devtools::install()
 
 library(d3plus)
 
+# Some networks
+edges <- read.csv(system.file("data/edges.csv", package = "d3plus"))
+nodes <- read.csv(system.file("data/nodes.csv", package = "d3plus"))
+d3plus("network", edges)
+d3plus("network",edges,nodes = nodes)
+d3plus("rings",edges)
+d3plus("rings", edges, focusDropdown = TRUE)
+d3plus("rings", edges, nodes = nodes,focusDropdown = TRUE)
+
 
 # Grouping bubbles with color
 bubbles <- read.csv(system.file("data/senado-tlc-corea.csv", package = "d3plus"))
@@ -33,14 +42,6 @@ d3plus("bubbles", bubbles[c(2,1,3)])
 data <- read.csv(system.file("data/expenses.csv", package = "d3plus"))
 d3plus("lines", data)
 
-# Some networks
-edges <- read.csv(system.file("data/edges.csv", package = "d3plus"))
-nodes <- read.csv(system.file("data/nodes.csv", package = "d3plus"))
-d3plus("rings",edges)
-d3plus("rings", edges, focusDropdown = TRUE)
-d3plus("rings", edges, nodes = nodes,focusDropdown = TRUE)
-d3plus("network", edges)
-d3plus("network",edges,nodes = nodes)
 
 # A scatter plot
 countries <- read.csv(system.file("data/countries.csv", package = "d3plus"))

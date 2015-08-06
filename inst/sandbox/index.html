@@ -1,33 +1,91 @@
-
 <!doctype html>
 <meta charset="utf-8">
-
-<!-- load D3js -->
+ 
 <script src="http://www.d3plus.org/js/d3.js"></script>
-
-<!-- load D3plus after D3js -->
 <script src="http://www.d3plus.org/js/d3plus.js"></script>
-
-<!-- create container element for visualization -->
+ 
 <div id="viz"></div>
+<div>
+    <span id="viz-placeholder">Click a date on the calendar</span>
+</div>
+ 
 
 <script>
 
-  // sample data array
-  var sample_data = [{"id":"Polo","group":"Contra el Gobierno","value":3},{"id":"Alianza Verde","group":"Contra el Gobierno","value":5},{"id":"Opción Ciudadana","group":"A favor del Gobierno","value":2},{"id":"Liberal","group":"Contra el Gobierno","value":1},{"id":"Liberal","group":"A favor del Gobierno","value":7},{"id":"Cambio Radical","group":"Contra el Gobierno","value":1},{"id":"Cambio Radical","group":"A favor del Gobierno","value":6},{"id":"La U","group":"Contra el Gobierno","value":2},{"id":"La U","group":"A favor del Gobierno","value":15},{"id":"Conservador","group":"A favor del Gobierno","value":13},{"id":"Centro Democrático","group":"A favor del Gobierno","value":15},{"id":"ASI","group":"Contra el Gobierno","value":1}]
-  var attributes = [{"id":"Polo","color":"#E41A1C"},{"id":"Alianza Verde","color":"#377EB8"},{"id":"Opción Ciudadana","color":"#4DAF4A"},{"id":"Liberal","color":"#984EA3"},{"id":"Cambio Radical","color":"#FF7F00"},{"id":"La U","color":"#FFFF33"},{"id":"Conservador","color":"#A65628"},{"id":"Centro Democrático","color":"#F781BF"},{"id":"ASI","color":"#999999"}];
+  var sample_data = [
+    {"name": "alpha", "value": 20},
+    {"name": "beta", "value": 12},
+    {"name": "gamma", "value": 30},
+    {"name": "delta", "value": 26},
+    {"name": "epsilon", "value": 30},
+    {"name": "zeta", "value": 30},
+    {"name": "theta", "value": 11},
+    {"name": "eta", "value": 24}
+  ]
 
-  // instantiate d3plus
+  var connections = [
+    {"source": "alpha", "target": "beta"},
+    {"source": "alpha", "target": "gamma"},
+    {"source": "beta", "target": "delta"},
+    {"source": "beta", "target": "epsilon"},
+    {"source": "zeta", "target": "gamma"},
+    {"source": "theta", "target": "gamma"},
+    {"source": "eta", "target": "gamma"}
+  ]
+
   var visualization = d3plus.viz()
-    .container("#viz")     // container DIV to hold the visualization
-    .data(sample_data)     // data to use with the visualization
-    .type("bubbles")       // visualization type
-    .id(["group", "id"]) // nesting keys
-    .depth(1)              // 0-based depth
-    .size("value")         // key name to size bubbles
-    .attrs(attributes)
-    .color("color")
-    // .color("id")        // color by each group
-    .draw()                // finally, draw the visualization!
+    .container("#viz")
+    .type("rings")
+    .data(sample_data)
+    .id("name")
+    .size("value")
+    .edges(connections)
+    .focus("alpha")
+    .draw()
+
+var config = {
+    "avatar_size" : 48
+}
+
+var svg = d3.select("svg")
+var defs = svg.append('svg:defs');
+
+defs.append("svg:pattern")
+    .attr("id", "grump_avatar")
+    .attr("width", config.avatar_size)
+    .attr("height", config.avatar_size)
+    .attr("patternUnits", "userSpaceOnUse")
+    .append("svg:image")
+    .attr("xlink:href", 'http://placekitten.com/g/48/48')
+    .attr("width", config.avatar_size)
+    .attr("height", config.avatar_size)
+    .attr("x", 0)
+    .attr("y", 0);
+
+var circle = svg.selectAll("rect")
+        .attr("cx", config.avatar_size/2)
+        .attr("cy", config.avatar_size/2)
+        .attr("r", config.avatar_size/2)
+        .style("fill", "#fff")
+        .style("fill", "url(#grump_avatar)");
+
+
+
+
+  // var circle = d3.selectAll("rect.d3plus_data")
+  //   //   .data(json.nodes)
+  //   // .enter().append("g")
+  //   //   .attr("class", "node")
+  //   //   .call(force.drag);
+
+  // circle.append("image")
+  //     .attr("xlink:href", "https://github.com/favicon.ico")
+  //     .attr("x", -8)
+  //     .attr("y", -8)
+  //     .attr("width", 16)
+  //     .attr("height", 16);
 
 </script>
+
+
+
