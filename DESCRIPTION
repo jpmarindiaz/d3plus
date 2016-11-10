@@ -6,8 +6,9 @@ Author: Juan Pablo Marin Diaz
 Maintainer: Juan Pablo Marín Díaz <jpmarindiaz@gmail.com>
 Description: R Htmlwidget for d3plus (http://d3plus.org)
 Depends:
-  R (>= 3.0.0),
-  reshape2,
-  htmlwidgets
+    R (>= 3.0.0),
+    reshape2,
+    htmlwidgets
 License: MIT + file LICENSE
 LazyData: true
+RoxygenNote: 5.0.1

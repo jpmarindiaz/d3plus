@@ -7,6 +7,7 @@ getData <- function(type,data, ...){
     data <- reshape2::melt(data,id = 1)
   }
   if(type %in% c("network","rings")){
+    edges <- data
     if(is.null(args$nodes))
       data <- cleanGraph(edges)
     else

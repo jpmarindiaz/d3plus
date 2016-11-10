@@ -8,6 +8,11 @@ devtools::install()
 library(d3plus)
 
 # Some networks
+edg <- read.csv(system.file("data/edges.csv", package = "d3plus"))
+d3plus("network", edg)
+
+
+# Some networks
 edges <- read.csv(system.file("data/edges.csv", package = "d3plus"))
 nodes <- read.csv(system.file("data/nodes.csv", package = "d3plus"))
 d3plus("network", edges)
