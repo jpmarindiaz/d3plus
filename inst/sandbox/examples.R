@@ -2,15 +2,24 @@
 library(devtools)
 library(htmlwidgets)
 document()
-load_all()
+#load_all()
 devtools::install()
 
 library(d3plus)
 
+#
+
+edges <- read.csv(system.file("data/edges-prod.csv", package = "d3plus"))
+nodes <- read.csv(system.file("data/nodes-prod.csv", package = "d3plus"))
+nodes$x <- NULL
+nodes$y <- NULL
+nodes$label <- nodes$description
+d3plus("network",edges,nodes = nodes)
+
+
 # Some networks
 edg <- read.csv(system.file("data/edges.csv", package = "d3plus"))
 d3plus("network", edg)
-
 
 # Some networks
 edges <- read.csv(system.file("data/edges.csv", package = "d3plus"))

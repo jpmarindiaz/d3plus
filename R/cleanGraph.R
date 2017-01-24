@@ -29,10 +29,10 @@ cleanGraph <- function(edges, nodes = NULL){
     nodes$size <- 1
   }
 
-#   if (is.null(nodes$color)){
-#     message("No node color provided: using default")
-#     nodes$color <- "#FE34A0"
-#   }
+  if (is.null(nodes$color)){
+    message("No node color provided: using default")
+    nodes$color <- "#FE34A0"
+  }
 
 #   if (is.null(nodes$type)){
 #     message("No node type provided: using random")

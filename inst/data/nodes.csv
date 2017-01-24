@@ -1,10 +1,10 @@
-id,size
-alpha,10
-beta,12
-gamma,30
-delta,26
-epsilon,12
-zeta,26
-theta,11
-eta,24
+id,size,color
+alpha,10,"#F0A493"
+beta,12,"#F0A493"
+gamma,30,"#F00493"
+delta,26,"#F00493"
+epsilon,12,"#F0A493"
+zeta,26,"#F0A403"
+theta,11,"#F0A403"
+eta,24,"#F0A403"
 

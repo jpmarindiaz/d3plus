@@ -142,6 +142,7 @@ HTMLWidgets.widget({
                 .nodes(positions)
                 .edges(edges)
                 .edges(edgesProps)
+                .color("color")
                 .size("size")
                 .id("id")
                 .draw()

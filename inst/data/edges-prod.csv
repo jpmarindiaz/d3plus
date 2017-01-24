@@ -1,0 +1,193 @@
+source,target,weight,color
+Portacepillo Vaquita,Portacepillo Abeja,572,#CCC
+Portacepillo Vaquita,Dalmata Dental,166,#CCC
+Portacepillo Vaquita,Portacepillo Rana,664,#CCC
+Portacepillo Abeja,Dalmata Dental,190,#CCC
+Portacepillo Abeja,Portacepillo Rana,610,#CCC
+Porta Pasta Dental,Dalmata Dental,131,#CCC
+Dalmata Dental,Filtro Te Musical,111,#CCC
+Dalmata Dental,Lapiz Cristal,142,#CCC
+Dalmata Dental,Portacepillo Rana,223,#CCC
+Dalmata Dental,Boligrafo oval extenda,125,#CCC
+Dalmata Dental,Jabonera Rana Pared,119,#CCC
+Dalmata Dental,Goma Lapiz,135,#CCC
+Hidrogel,Deco Bowl Verde,145,#CCC
+Hidrogel,Deco Bowl Violeta,114,#CCC
+Hidrogel,Deco Bowl Rojo,155,#CCC
+Hidrogel,Lapiz Cristal,165,#CCC
+Hidrogel,Loto Med Blanca,155,#CCC
+Hidrogel,Loto Med Roja,103,#CCC
+Hidrogel,Loto Med Naranja,124,#CCC
+Hidrogel,Goma Lapiz,127,#CCC
+2 en 1 Rana,2 en 1 Vaca,185,#CCC
+2 en 1 Rana,2 en 1 Mono,212,#CCC
+2 en 1 Rana,2 en 1 Pinguino,161,#CCC
+2 en 1 Vaca,2 en 1 Mono,130,#CCC
+2 en 1 Vaca,2 en 1 Pinguino,105,#CCC
+Sticky Note,Lapiz Cristal,132,#CCC
+Sticky Note,Goma Lapiz,106,#CCC
+Florero Stripes Horiz,Florero Stripes Bl,236,#CCC
+Boligrafo Lipstick,Lapiz Cristal,210,#CCC
+Boligrafo Lipstick,Boligrafo Fluo,108,#CCC
+Boligrafo Lipstick,Boligrafo oval extenda,160,#CCC
+Boligrafo Lipstick,Boligrafo Rojo Lipstick,301,#CCC
+Boligrafo Lipstick,Goma Lapiz,170,#CCC
+Boligrafo Lipstick,Boligrafo Car Metallic,126,#CCC
+Boligrafo Lipstick,Resaltador Fucsia Esmalte,140,#CCC
+Boligrafo Dots Blanco,Lapiz Cristal,171,#CCC
+Boligrafo Dots Blanco,Boligrafo Ojos,146,#CCC
+Boligrafo Dots Blanco,Anotador Moño,107,#CCC
+Boligrafo Dots Blanco,Boligrafo Fluo,115,#CCC
+Boligrafo Dots Blanco,Boligrafo oval extenda,171,#CCC
+Boligrafo Dots Blanco,Goma Lapiz,163,#CCC
+Boligrafo Dots Blanco,Boligrafo Car Metallic,211,#CCC
+Agarradera Zoo,Cepillo Formas C/Esponja,134,#CCC
+Deco Bowl Verde,Deco Bowl Violeta,279,#CCC
+Deco Bowl Verde,Deco Bowl Transparente,294,#CCC
+Deco Bowl Verde,Deco Bowl Fuchsia,263,#CCC
+Deco Bowl Verde,Deco Bowl Rojo,236,#CCC
+Deco Bowl Verde,Bowl Crix,148,#CCC
+Deco Bowl Verde,Loto Med Blanca,365,#CCC
+Deco Bowl Verde,Loto Med Violeta,138,#CCC
+Deco Bowl Verde,Loto Med Roja,134,#CCC
+Deco Bowl Verde,Loto Med Naranja,548,#CCC
+Deco Bowl Verde,Bowl 25X10 Cm,298,#CCC
+Deco Bowl Violeta,Deco Bowl Transparente,180,#CCC
+Deco Bowl Violeta,Deco Bowl Fuchsia,262,#CCC
+Deco Bowl Violeta,Deco Bowl Rojo,198,#CCC
+Deco Bowl Violeta,Bowl Crix,141,#CCC
+Deco Bowl Violeta,Loto Med Blanca,150,#CCC
+Deco Bowl Violeta,Loto Med Violeta,571,#CCC
+Deco Bowl Violeta,Loto Med Naranja,182,#CCC
+Deco Bowl Violeta,Bowl 25X10 Cm,218,#CCC
+Deco Bowl Transparente,Deco Bowl Fuchsia,151,#CCC
+Deco Bowl Transparente,Deco Bowl Rojo,308,#CCC
+Deco Bowl Transparente,Bowl Crix,123,#CCC
+Deco Bowl Transparente,Loto Med Blanca,347,#CCC
+Deco Bowl Transparente,Loto Med Roja,173,#CCC
+Deco Bowl Transparente,Loto Med Naranja,217,#CCC
+Deco Bowl Transparente,Bowl 25X10 Cm,195,#CCC
+Deco Bowl Fuchsia,Deco Bowl Rojo,122,#CCC
+Deco Bowl Fuchsia,Loto Med Blanca,132,#CCC
+Deco Bowl Fuchsia,Loto Med Violeta,177,#CCC
+Deco Bowl Fuchsia,Loto Med Naranja,153,#CCC
+Deco Bowl Rojo,Bowl Crix,179,#CCC
+Deco Bowl Rojo,Loto Med Blanca,237,#CCC
+Deco Bowl Rojo,Loto Med Roja,884,#CCC
+Deco Bowl Rojo,Loto Med Naranja,248,#CCC
+Deco Bowl Rojo,Bowl 25X10 Cm,329,#CCC
+Agitadores Help,Filtro Te Musical,102,#CCC
+Agitadores Help,Pajaros Pinches,121,#CCC
+Filtro Te Musical,Lapiz Cristal,210,#CCC
+Filtro Te Musical,Cepillo Formas C/Esponja,125,#CCC
+Filtro Te Musical,Sacapuntas Vegetales,109,#CCC
+Filtro Te Musical,Ipad Stand,143,#CCC
+Filtro Te Musical,Pajaros Pinches,126,#CCC
+Filtro Te Musical,Boligrafo oval extenda,125,#CCC
+Filtro Te Musical,Goma Lapiz,103,#CCC
+Lapiz Cristal,Anotador Via Aerea,118,#CCC
+Lapiz Cristal,Identificador Equipaje,107,#CCC
+Lapiz Cristal,Anteojos Slurp,118,#CCC
+Lapiz Cristal,Cepillo Formas C/Esponja,130,#CCC
+Lapiz Cristal,Boligrafo Discador 3 Luces,198,#CCC
+Lapiz Cristal,Linterna Mini,126,#CCC
+Lapiz Cristal,Pelota bounce,175,#CCC
+Lapiz Cristal,Boligrafo Ojos,191,#CCC
+Lapiz Cristal,Anotador Moño,219,#CCC
+Lapiz Cristal,Porta Anteojos Girly,120,#CCC
+Lapiz Cristal,Ipad Stand,145,#CCC
+Lapiz Cristal,Espejo Beso,139,#CCC
+Lapiz Cristal,Cuaderno Paris,167,#CCC
+Lapiz Cristal,Boligrafo Fluo,229,#CCC
+Lapiz Cristal,Boligrafo  Gatos Color,155,#CCC
+Lapiz Cristal,Pajaros Pinches,120,#CCC
+Lapiz Cristal,Boligrafo oval extenda,321,#CCC
+Lapiz Cristal,Boligrafo Rojo Lipstick,107,#CCC
+Lapiz Cristal,Goma Lapiz,751,#CCC
+Lapiz Cristal,Boligrafo Car Metallic,164,#CCC
+Lapiz Cristal,Porta Cel Tacos,168,#CCC
+Lapiz Cristal,Resaltador Verde Esmalte,123,#CCC
+Lapiz Cristal,Resaltador Fucsia Esmalte,173,#CCC
+Lapiz Cristal,Resaltador Violeta Esmalte,147,#CCC
+Lapiz Cristal,cuaderno espera TP,105,#CCC
+Portacepillo Canilla Verde,Portacepillo Canilla Violeta,172,#CCC
+Anteojos Slurp,Goma Lapiz,124,#CCC
+Cierra Bolsas Pulgar,Pajaros Pinches,104,#CCC
+Boligrafo Discador 3 Luces,Linterna Mini,127,#CCC
+Boligrafo Discador 3 Luces,Goma Lapiz,133,#CCC
+Pelota bounce,Pelota Holografica,198,#CCC
+Pelota bounce,Boligrafo oval extenda,113,#CCC
+Pelota bounce,Goma Lapiz,183,#CCC
+Pelota bounce,Boligrafo Car Metallic,117,#CCC
+Bowl Crix,Loto Med Blanca,159,#CCC
+Bowl Crix,Loto Med Roja,134,#CCC
+Bowl Crix,Loto Med Naranja,168,#CCC
+Boligrafo Ojos,Boligrafo Fluo,150,#CCC
+Boligrafo Ojos,Boligrafo oval extenda,169,#CCC
+Boligrafo Ojos,Goma Lapiz,212,#CCC
+Boligrafo Ojos,Boligrafo Car Metallic,173,#CCC
+Anotador Moño,Boligrafo  Gatos Color,175,#CCC
+Anotador Moño,Boligrafo oval extenda,116,#CCC
+Porta Anteojos Girly,Monedero Girly rojo,104,#CCC
+Ipad Stand,Traba Puerta Llave,110,#CCC
+Ipad Stand,Boligrafo oval extenda,108,#CCC
+Ipad Stand,Organizador Remotos,165,#CCC
+Ipad Stand,Goma Lapiz,153,#CCC
+Ipad Stand,Porta Cel Tacos,181,#CCC
+Bolsa lechuza,Bolsa vaquita,105,#CCC
+Espejo Beso,Porta Cel Tacos,164,#CCC
+Boligrafo Calavera,Boligrafo Smiley,124,#CCC
+Boligrafo Fluo,Boligrafo  Gatos Color,118,#CCC
+Boligrafo Fluo,Boligrafo oval extenda,313,#CCC
+Boligrafo Fluo,Goma Lapiz,301,#CCC
+Boligrafo Fluo,Boligrafo Car Metallic,187,#CCC
+Boligrafo Fluo,Resaltador Fucsia Esmalte,123,#CCC
+Boligrafo Fluo,Resaltador Violeta Esmalte,106,#CCC
+Boligrafo Fluo,Boligrafo Multi,108,#CCC
+Boligrafo  Gatos Color,Boligrafo oval extenda,163,#CCC
+Boligrafo  Gatos Color,Goma Lapiz,144,#CCC
+Boligrafo  Gatos Color,Boligrafo Car Metallic,162,#CCC
+Loto Med Blanca,Loto Med Violeta,119,#CCC
+Loto Med Blanca,Loto Med Roja,169,#CCC
+Loto Med Blanca,Loto Med Naranja,210,#CCC
+Loto Med Blanca,Bowl 25X10 Cm,278,#CCC
+Loto Med Violeta,Loto Med Roja,102,#CCC
+Loto Med Violeta,Loto Med Naranja,132,#CCC
+Loto Med Violeta,Bowl 25X10 Cm,202,#CCC
+Loto Med Roja,Loto Med Naranja,201,#CCC
+Loto Med Roja,Bowl 25X10 Cm,277,#CCC
+Loto Med Naranja,Bowl 25X10 Cm,283,#CCC
+Monedero Girly rojo,Monedero Girly blanco,101,#CCC
+Soporte Cargador Azul,Soporte Cargador Rojo,129,#CCC
+Soporte Cargador Azul,Soporte Cargador Negro,127,#CCC
+Soporte Cargador Azul,Soporte Cargador Verde,105,#CCC
+Soporte Cargador Rojo,Soporte Cargador Negro,104,#CCC
+Soporte Cargador Rojo,Soporte Cargador Verde,153,#CCC
+Ind london,Ind traveller,123,#CCC
+Ind london,Ind NyNy,135,#CCC
+Ind traveller,Ind Casette,220,#CCC
+Ind traveller,Ind Deck,169,#CCC
+Ind traveller,Ind Diario,311,#CCC
+Boligrafo oval extenda,Goma Lapiz,320,#CCC
+Boligrafo oval extenda,Boligrafo Car Metallic,235,#CCC
+Boligrafo oval extenda,Resaltador Fucsia Esmalte,113,#CCC
+Organizador Remotos,Porta Cel Tacos,135,#CCC
+Goma Lapiz,Boligrafo Car Metallic,281,#CCC
+Goma Lapiz,Porta Cel Tacos,131,#CCC
+Goma Lapiz,Resaltador Rb,108,#CCC
+Goma Lapiz,Resaltador Fucsia Esmalte,126,#CCC
+Goma Lapiz,Resaltador Violeta Esmalte,130,#CCC
+Goma Lapiz,Boligrafo Multi,112,#CCC
+Cepillo Espejo Vi,Cepillo Espejo Fu,119,#CCC
+Ind Mosaico,Ind Metropolis,153,#CCC
+Ind Casette,Ind Deck,414,#CCC
+Ind Casette,Ind 33Rpm,118,#CCC
+Ind Casette,Ind Diario,165,#CCC
+Ind Deck,Ind Diario,150,#CCC
+Ind Ravioli,Ind Coq,155,#CCC
+Resaltador Verde Esmalte,Resaltador Fucsia Esmalte,286,#CCC
+Resaltador Verde Esmalte,Resaltador Naranja Esmalte,283,#CCC
+Resaltador Verde Esmalte,Resaltador Violeta Esmalte,248,#CCC
+Resaltador Fucsia Esmalte,Resaltador Naranja Esmalte,249,#CCC
+Resaltador Fucsia Esmalte,Resaltador Violeta Esmalte,377,#CCC
+Resaltador Naranja Esmalte,Resaltador Violeta Esmalte,241,#CCC
