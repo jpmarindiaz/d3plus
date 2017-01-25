@@ -1,193 +1,193 @@
-source,target,weight,color
-Portacepillo Vaquita,Portacepillo Abeja,572,#CCC
-Portacepillo Vaquita,Dalmata Dental,166,#CCC
-Portacepillo Vaquita,Portacepillo Rana,664,#CCC
-Portacepillo Abeja,Dalmata Dental,190,#CCC
-Portacepillo Abeja,Portacepillo Rana,610,#CCC
-Porta Pasta Dental,Dalmata Dental,131,#CCC
-Dalmata Dental,Filtro Te Musical,111,#CCC
-Dalmata Dental,Lapiz Cristal,142,#CCC
-Dalmata Dental,Portacepillo Rana,223,#CCC
-Dalmata Dental,Boligrafo oval extenda,125,#CCC
-Dalmata Dental,Jabonera Rana Pared,119,#CCC
-Dalmata Dental,Goma Lapiz,135,#CCC
-Hidrogel,Deco Bowl Verde,145,#CCC
-Hidrogel,Deco Bowl Violeta,114,#CCC
-Hidrogel,Deco Bowl Rojo,155,#CCC
-Hidrogel,Lapiz Cristal,165,#CCC
-Hidrogel,Loto Med Blanca,155,#CCC
-Hidrogel,Loto Med Roja,103,#CCC
-Hidrogel,Loto Med Naranja,124,#CCC
-Hidrogel,Goma Lapiz,127,#CCC
-2 en 1 Rana,2 en 1 Vaca,185,#CCC
-2 en 1 Rana,2 en 1 Mono,212,#CCC
-2 en 1 Rana,2 en 1 Pinguino,161,#CCC
-2 en 1 Vaca,2 en 1 Mono,130,#CCC
-2 en 1 Vaca,2 en 1 Pinguino,105,#CCC
-Sticky Note,Lapiz Cristal,132,#CCC
-Sticky Note,Goma Lapiz,106,#CCC
-Florero Stripes Horiz,Florero Stripes Bl,236,#CCC
-Boligrafo Lipstick,Lapiz Cristal,210,#CCC
-Boligrafo Lipstick,Boligrafo Fluo,108,#CCC
-Boligrafo Lipstick,Boligrafo oval extenda,160,#CCC
-Boligrafo Lipstick,Boligrafo Rojo Lipstick,301,#CCC
-Boligrafo Lipstick,Goma Lapiz,170,#CCC
-Boligrafo Lipstick,Boligrafo Car Metallic,126,#CCC
-Boligrafo Lipstick,Resaltador Fucsia Esmalte,140,#CCC
-Boligrafo Dots Blanco,Lapiz Cristal,171,#CCC
-Boligrafo Dots Blanco,Boligrafo Ojos,146,#CCC
-Boligrafo Dots Blanco,Anotador Moño,107,#CCC
-Boligrafo Dots Blanco,Boligrafo Fluo,115,#CCC
-Boligrafo Dots Blanco,Boligrafo oval extenda,171,#CCC
-Boligrafo Dots Blanco,Goma Lapiz,163,#CCC
-Boligrafo Dots Blanco,Boligrafo Car Metallic,211,#CCC
-Agarradera Zoo,Cepillo Formas C/Esponja,134,#CCC
-Deco Bowl Verde,Deco Bowl Violeta,279,#CCC
-Deco Bowl Verde,Deco Bowl Transparente,294,#CCC
-Deco Bowl Verde,Deco Bowl Fuchsia,263,#CCC
-Deco Bowl Verde,Deco Bowl Rojo,236,#CCC
-Deco Bowl Verde,Bowl Crix,148,#CCC
-Deco Bowl Verde,Loto Med Blanca,365,#CCC
-Deco Bowl Verde,Loto Med Violeta,138,#CCC
-Deco Bowl Verde,Loto Med Roja,134,#CCC
-Deco Bowl Verde,Loto Med Naranja,548,#CCC
-Deco Bowl Verde,Bowl 25X10 Cm,298,#CCC
-Deco Bowl Violeta,Deco Bowl Transparente,180,#CCC
-Deco Bowl Violeta,Deco Bowl Fuchsia,262,#CCC
-Deco Bowl Violeta,Deco Bowl Rojo,198,#CCC
-Deco Bowl Violeta,Bowl Crix,141,#CCC
-Deco Bowl Violeta,Loto Med Blanca,150,#CCC
-Deco Bowl Violeta,Loto Med Violeta,571,#CCC
-Deco Bowl Violeta,Loto Med Naranja,182,#CCC
-Deco Bowl Violeta,Bowl 25X10 Cm,218,#CCC
-Deco Bowl Transparente,Deco Bowl Fuchsia,151,#CCC
-Deco Bowl Transparente,Deco Bowl Rojo,308,#CCC
-Deco Bowl Transparente,Bowl Crix,123,#CCC
-Deco Bowl Transparente,Loto Med Blanca,347,#CCC
-Deco Bowl Transparente,Loto Med Roja,173,#CCC
-Deco Bowl Transparente,Loto Med Naranja,217,#CCC
-Deco Bowl Transparente,Bowl 25X10 Cm,195,#CCC
-Deco Bowl Fuchsia,Deco Bowl Rojo,122,#CCC
-Deco Bowl Fuchsia,Loto Med Blanca,132,#CCC
-Deco Bowl Fuchsia,Loto Med Violeta,177,#CCC
-Deco Bowl Fuchsia,Loto Med Naranja,153,#CCC
-Deco Bowl Rojo,Bowl Crix,179,#CCC
-Deco Bowl Rojo,Loto Med Blanca,237,#CCC
-Deco Bowl Rojo,Loto Med Roja,884,#CCC
-Deco Bowl Rojo,Loto Med Naranja,248,#CCC
-Deco Bowl Rojo,Bowl 25X10 Cm,329,#CCC
-Agitadores Help,Filtro Te Musical,102,#CCC
-Agitadores Help,Pajaros Pinches,121,#CCC
-Filtro Te Musical,Lapiz Cristal,210,#CCC
-Filtro Te Musical,Cepillo Formas C/Esponja,125,#CCC
-Filtro Te Musical,Sacapuntas Vegetales,109,#CCC
-Filtro Te Musical,Ipad Stand,143,#CCC
-Filtro Te Musical,Pajaros Pinches,126,#CCC
-Filtro Te Musical,Boligrafo oval extenda,125,#CCC
-Filtro Te Musical,Goma Lapiz,103,#CCC
-Lapiz Cristal,Anotador Via Aerea,118,#CCC
-Lapiz Cristal,Identificador Equipaje,107,#CCC
-Lapiz Cristal,Anteojos Slurp,118,#CCC
-Lapiz Cristal,Cepillo Formas C/Esponja,130,#CCC
-Lapiz Cristal,Boligrafo Discador 3 Luces,198,#CCC
-Lapiz Cristal,Linterna Mini,126,#CCC
-Lapiz Cristal,Pelota bounce,175,#CCC
-Lapiz Cristal,Boligrafo Ojos,191,#CCC
-Lapiz Cristal,Anotador Moño,219,#CCC
-Lapiz Cristal,Porta Anteojos Girly,120,#CCC
-Lapiz Cristal,Ipad Stand,145,#CCC
-Lapiz Cristal,Espejo Beso,139,#CCC
-Lapiz Cristal,Cuaderno Paris,167,#CCC
-Lapiz Cristal,Boligrafo Fluo,229,#CCC
-Lapiz Cristal,Boligrafo  Gatos Color,155,#CCC
-Lapiz Cristal,Pajaros Pinches,120,#CCC
-Lapiz Cristal,Boligrafo oval extenda,321,#CCC
-Lapiz Cristal,Boligrafo Rojo Lipstick,107,#CCC
-Lapiz Cristal,Goma Lapiz,751,#CCC
-Lapiz Cristal,Boligrafo Car Metallic,164,#CCC
-Lapiz Cristal,Porta Cel Tacos,168,#CCC
-Lapiz Cristal,Resaltador Verde Esmalte,123,#CCC
-Lapiz Cristal,Resaltador Fucsia Esmalte,173,#CCC
-Lapiz Cristal,Resaltador Violeta Esmalte,147,#CCC
-Lapiz Cristal,cuaderno espera TP,105,#CCC
-Portacepillo Canilla Verde,Portacepillo Canilla Violeta,172,#CCC
-Anteojos Slurp,Goma Lapiz,124,#CCC
-Cierra Bolsas Pulgar,Pajaros Pinches,104,#CCC
-Boligrafo Discador 3 Luces,Linterna Mini,127,#CCC
-Boligrafo Discador 3 Luces,Goma Lapiz,133,#CCC
-Pelota bounce,Pelota Holografica,198,#CCC
-Pelota bounce,Boligrafo oval extenda,113,#CCC
-Pelota bounce,Goma Lapiz,183,#CCC
-Pelota bounce,Boligrafo Car Metallic,117,#CCC
-Bowl Crix,Loto Med Blanca,159,#CCC
-Bowl Crix,Loto Med Roja,134,#CCC
-Bowl Crix,Loto Med Naranja,168,#CCC
-Boligrafo Ojos,Boligrafo Fluo,150,#CCC
-Boligrafo Ojos,Boligrafo oval extenda,169,#CCC
-Boligrafo Ojos,Goma Lapiz,212,#CCC
-Boligrafo Ojos,Boligrafo Car Metallic,173,#CCC
-Anotador Moño,Boligrafo  Gatos Color,175,#CCC
-Anotador Moño,Boligrafo oval extenda,116,#CCC
-Porta Anteojos Girly,Monedero Girly rojo,104,#CCC
-Ipad Stand,Traba Puerta Llave,110,#CCC
-Ipad Stand,Boligrafo oval extenda,108,#CCC
-Ipad Stand,Organizador Remotos,165,#CCC
-Ipad Stand,Goma Lapiz,153,#CCC
-Ipad Stand,Porta Cel Tacos,181,#CCC
-Bolsa lechuza,Bolsa vaquita,105,#CCC
-Espejo Beso,Porta Cel Tacos,164,#CCC
-Boligrafo Calavera,Boligrafo Smiley,124,#CCC
-Boligrafo Fluo,Boligrafo  Gatos Color,118,#CCC
-Boligrafo Fluo,Boligrafo oval extenda,313,#CCC
-Boligrafo Fluo,Goma Lapiz,301,#CCC
-Boligrafo Fluo,Boligrafo Car Metallic,187,#CCC
-Boligrafo Fluo,Resaltador Fucsia Esmalte,123,#CCC
-Boligrafo Fluo,Resaltador Violeta Esmalte,106,#CCC
-Boligrafo Fluo,Boligrafo Multi,108,#CCC
-Boligrafo  Gatos Color,Boligrafo oval extenda,163,#CCC
-Boligrafo  Gatos Color,Goma Lapiz,144,#CCC
-Boligrafo  Gatos Color,Boligrafo Car Metallic,162,#CCC
-Loto Med Blanca,Loto Med Violeta,119,#CCC
-Loto Med Blanca,Loto Med Roja,169,#CCC
-Loto Med Blanca,Loto Med Naranja,210,#CCC
-Loto Med Blanca,Bowl 25X10 Cm,278,#CCC
-Loto Med Violeta,Loto Med Roja,102,#CCC
-Loto Med Violeta,Loto Med Naranja,132,#CCC
-Loto Med Violeta,Bowl 25X10 Cm,202,#CCC
-Loto Med Roja,Loto Med Naranja,201,#CCC
-Loto Med Roja,Bowl 25X10 Cm,277,#CCC
-Loto Med Naranja,Bowl 25X10 Cm,283,#CCC
-Monedero Girly rojo,Monedero Girly blanco,101,#CCC
-Soporte Cargador Azul,Soporte Cargador Rojo,129,#CCC
-Soporte Cargador Azul,Soporte Cargador Negro,127,#CCC
-Soporte Cargador Azul,Soporte Cargador Verde,105,#CCC
-Soporte Cargador Rojo,Soporte Cargador Negro,104,#CCC
-Soporte Cargador Rojo,Soporte Cargador Verde,153,#CCC
-Ind london,Ind traveller,123,#CCC
-Ind london,Ind NyNy,135,#CCC
-Ind traveller,Ind Casette,220,#CCC
-Ind traveller,Ind Deck,169,#CCC
-Ind traveller,Ind Diario,311,#CCC
-Boligrafo oval extenda,Goma Lapiz,320,#CCC
-Boligrafo oval extenda,Boligrafo Car Metallic,235,#CCC
-Boligrafo oval extenda,Resaltador Fucsia Esmalte,113,#CCC
-Organizador Remotos,Porta Cel Tacos,135,#CCC
-Goma Lapiz,Boligrafo Car Metallic,281,#CCC
-Goma Lapiz,Porta Cel Tacos,131,#CCC
-Goma Lapiz,Resaltador Rb,108,#CCC
-Goma Lapiz,Resaltador Fucsia Esmalte,126,#CCC
-Goma Lapiz,Resaltador Violeta Esmalte,130,#CCC
-Goma Lapiz,Boligrafo Multi,112,#CCC
-Cepillo Espejo Vi,Cepillo Espejo Fu,119,#CCC
-Ind Mosaico,Ind Metropolis,153,#CCC
-Ind Casette,Ind Deck,414,#CCC
-Ind Casette,Ind 33Rpm,118,#CCC
-Ind Casette,Ind Diario,165,#CCC
-Ind Deck,Ind Diario,150,#CCC
-Ind Ravioli,Ind Coq,155,#CCC
-Resaltador Verde Esmalte,Resaltador Fucsia Esmalte,286,#CCC
-Resaltador Verde Esmalte,Resaltador Naranja Esmalte,283,#CCC
-Resaltador Verde Esmalte,Resaltador Violeta Esmalte,248,#CCC
-Resaltador Fucsia Esmalte,Resaltador Naranja Esmalte,249,#CCC
-Resaltador Fucsia Esmalte,Resaltador Violeta Esmalte,377,#CCC
-Resaltador Naranja Esmalte,Resaltador Violeta Esmalte,241,#CCC
+source,target,weight
+08693322949,08693322950,572
+08693322949,08693322972,166
+08693322949,08693328082,664
+08693322950,08693322972,190
+08693322950,08693328082,610
+08693322951,08693322972,131
+08693322972,08693325985,111
+08693322972,08693326810,142
+08693322972,08693328082,223
+08693322972,08693329561,125
+08693322972,08693329624,119
+08693322972,08693329972,135
+08693322997,08693325832,145
+08693322997,08693325833,114
+08693322997,08693325836,155
+08693322997,08693326810,165
+08693322997,08693328883,155
+08693322997,08693328885,103
+08693322997,08693328886,124
+08693322997,08693329972,127
+08693324420,08693324421,185
+08693324420,08693324422,212
+08693324420,08693324423,161
+08693324421,08693324422,130
+08693324421,08693324423,105
+08693325062,08693326810,132
+08693325062,08693329972,106
+08693325427,08693325428,236
+08693325564,08693326810,210
+08693325564,08693328839,108
+08693325564,08693329561,160
+08693325564,08693329935,301
+08693325564,08693329972,170
+08693325564,08693330070,126
+08693325564,08693330265,140
+08693325732,08693326810,171
+08693325732,08693327975,146
+08693325732,08693327989,107
+08693325732,08693328839,115
+08693325732,08693329561,171
+08693325732,08693329972,163
+08693325732,08693330070,211
+08693325749,08693327622,134
+08693325832,08693325833,279
+08693325832,08693325834,294
+08693325832,08693325835,263
+08693325832,08693325836,236
+08693325832,08693327934,148
+08693325832,08693328883,365
+08693325832,08693328884,138
+08693325832,08693328885,134
+08693325832,08693328886,548
+08693325832,08693330155,298
+08693325833,08693325834,180
+08693325833,08693325835,262
+08693325833,08693325836,198
+08693325833,08693327934,141
+08693325833,08693328883,150
+08693325833,08693328884,571
+08693325833,08693328886,182
+08693325833,08693330155,218
+08693325834,08693325835,151
+08693325834,08693325836,308
+08693325834,08693327934,123
+08693325834,08693328883,347
+08693325834,08693328885,173
+08693325834,08693328886,217
+08693325834,08693330155,195
+08693325835,08693325836,122
+08693325835,08693328883,132
+08693325835,08693328884,177
+08693325835,08693328886,153
+08693325836,08693327934,179
+08693325836,08693328883,237
+08693325836,08693328885,884
+08693325836,08693328886,248
+08693325836,08693330155,329
+08693325982,08693325985,102
+08693325982,08693329532,121
+08693325985,08693326810,210
+08693325985,08693327622,125
+08693325985,08693328214,109
+08693325985,08693328555,143
+08693325985,08693329532,126
+08693325985,08693329561,125
+08693325985,08693329972,103
+08693326810,08693327367,118
+08693326810,08693327445,107
+08693326810,08693327583,118
+08693326810,08693327622,130
+08693326810,08693327806,198
+08693326810,08693327807,126
+08693326810,08693327894,175
+08693326810,08693327975,191
+08693326810,08693327989,219
+08693326810,08693328191,120
+08693326810,08693328555,145
+08693326810,08693328592,139
+08693326810,08693328809,167
+08693326810,08693328839,229
+08693326810,08693328850,155
+08693326810,08693329532,120
+08693326810,08693329561,321
+08693326810,08693329935,107
+08693326810,08693329972,751
+08693326810,08693330070,164
+08693326810,08693330111,168
+08693326810,08693330264,123
+08693326810,08693330265,173
+08693326810,08693330267,147
+08693326810,08693330274,105
+08693327112,08693327113,172
+08693327583,08693329972,124
+08693327741,08693329532,104
+08693327806,08693327807,127
+08693327806,08693329972,133
+08693327894,08693327895,198
+08693327894,08693329561,113
+08693327894,08693329972,183
+08693327894,08693330070,117
+08693327934,08693328883,159
+08693327934,08693328885,134
+08693327934,08693328886,168
+08693327975,08693328839,150
+08693327975,08693329561,169
+08693327975,08693329972,212
+08693327975,08693330070,173
+08693327989,08693328850,175
+08693327989,08693329561,116
+08693328191,08693329333,104
+08693328555,08693328600,110
+08693328555,08693329561,108
+08693328555,08693329790,165
+08693328555,08693329972,153
+08693328555,08693330111,181
+08693328579,08693328580,105
+08693328592,08693330111,164
+08693328837,08693328838,124
+08693328839,08693328850,118
+08693328839,08693329561,313
+08693328839,08693329972,301
+08693328839,08693330070,187
+08693328839,08693330265,123
+08693328839,08693330267,106
+08693328839,08693330942,108
+08693328850,08693329561,163
+08693328850,08693329972,144
+08693328850,08693330070,162
+08693328883,08693328884,119
+08693328883,08693328885,169
+08693328883,08693328886,210
+08693328883,08693330155,278
+08693328884,08693328885,102
+08693328884,08693328886,132
+08693328884,08693330155,202
+08693328885,08693328886,201
+08693328885,08693330155,277
+08693328886,08693330155,283
+08693329333,08693329335,101
+08693329403,08693329404,129
+08693329403,08693329405,127
+08693329403,08693329406,105
+08693329404,08693329405,104
+08693329404,08693329406,153
+08693329505,08693329506,123
+08693329505,08693330801,135
+08693329506,08693330205,220
+08693329506,08693330206,169
+08693329506,08699324495,311
+08693329561,08693329972,320
+08693329561,08693330070,235
+08693329561,08693330265,113
+08693329790,08693330111,135
+08693329972,08693330070,281
+08693329972,08693330111,131
+08693329972,08693330130,108
+08693329972,08693330265,126
+08693329972,08693330267,130
+08693329972,08693330942,112
+08693330133,08693330134,119
+08693330202,08693330203,153
+08693330205,08693330206,414
+08693330205,08693330210,118
+08693330205,08699324495,165
+08693330206,08699324495,150
+08693330207,08693330208,155
+08693330264,08693330265,286
+08693330264,08693330266,283
+08693330264,08693330267,248
+08693330265,08693330266,249
+08693330265,08693330267,377
+08693330266,08693330267,241

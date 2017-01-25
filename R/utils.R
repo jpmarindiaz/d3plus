@@ -1,3 +1,4 @@
+#' @export
 `%||%` <- function (x, y)
 {
   if (is.empty(x))

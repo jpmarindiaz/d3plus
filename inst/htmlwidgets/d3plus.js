@@ -127,13 +127,22 @@ HTMLWidgets.widget({
 
         function draw_network(el,x,d3plus){
             var nodes = HTMLWidgets.dataframeToD3(x.data.nodes);
+            console.log(nodes);
             var edges = HTMLWidgets.dataframeToD3(x.data.edges);
             var positions = x.data.positions;
+            var vars = x.data.vars;
+            if(nodes.group){
+            	var text = {"group":"group","id":"label"};
+            }else{
+            	var text = "label"
+            }
+            var lang = x.settings.lang || "en_US"; // "zh_CN","en_US","es_ES","pt_BR" 
+            var showLegend = x.settings.showLegend || false        
             var edgesProps = {
                 "arrows": false,
                 "label":"label",
                 "size": "size",
-                "color": "#A40"
+                "color": "#CCC"
                 };
               d3plus
                 .container("#" + vizId)
@@ -143,8 +152,16 @@ HTMLWidgets.widget({
                 .edges(edges)
                 .edges(edgesProps)
                 .color("color")
-                .size("size")
-                .id("id")
+                .size(vars.size)
+                .id(["id"])
+                // https://groups.google.com/forum/#!topic/d3plus/q4iXv0rpzQo
+                // .text("label")  
+                // .id(["group","id"])
+                .text(text)
+                .tooltip(["id","label"])
+                .tooltip({connections: true})
+                .legend({value: showLegend, data:false, text: "group"})
+                .format(lang)
                 .draw()
             }
 
@@ -152,10 +169,16 @@ HTMLWidgets.widget({
             var nodes = HTMLWidgets.dataframeToD3(x.data.nodes);
             var edges = HTMLWidgets.dataframeToD3(x.data.edges);
             var positions = x.data.positions;
-
-            console.log(x.settings)
+            var vars = x.data.vars;
+            if(nodes.group){
+            	var text = {"group":"group","id":"label"};
+            }else{
+            	var text = "label"
+            }
+            console.log(x.data)
             var focusDropdown = x.settings.focusDropdown;
-
+            var lang = x.settings.lang || "en_US"; // "zh_CN","en_US","es_ES","pt_BR" 
+            var showLegend = x.settings.showLegend || false        
             var ui = [];
             if(focusDropdown){
                 ui = [{
@@ -178,8 +201,6 @@ HTMLWidgets.widget({
                 "tooltip" : true,
                 "value"   : nodes[0].id
                 };
-            var lang = "es_ES";
-            // "zh_CN","en_US","es_ES","pt_BR"
             var tooltip = {
                 "html":"<h1>Tootltip</h1>"};
               d3plus
@@ -189,11 +210,15 @@ HTMLWidgets.widget({
                 .nodes(positions)
                 .edges(edges)
                 .edges(edgesProps)
-                .size("size")
-                .id("id")
+                .color("color")
+                .size(vars.size)
+                .id(["id"])
                 .focus(focus)
-                // .tooltip(tooltip)
-                // .format(lang)
+                .text(text)
+                .tooltip(["id","label"])
+                .tooltip({connections: true})
+                .legend({value: showLegend, data:true, text: "group"})
+                .format(lang)
                 .ui(ui)
                 .draw()
             }

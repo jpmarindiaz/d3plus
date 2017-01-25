@@ -2,11 +2,11 @@
 % Please edit documentation in R/d3plus.R
 \name{d3plus}
 \alias{d3plus}
-\title{<Add Title>}
+\title{d3plus}
 \usage{
-d3plus(type, data, width = NULL, height = NULL, ...)
+d3plus(d, type, width = NULL, height = NULL, ...)
 }
 \description{
-<Add Description>
+d3plus
 }
 

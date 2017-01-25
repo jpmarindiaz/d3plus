@@ -1,5 +1,7 @@
 #' @export
-cleanGraph <- function(edges, nodes = NULL){
+cleanGraph <- function(edges, nodes = NULL, nodeSizeVar = NULL){
+  vars <- list()
+
   if (is.null(edges)){
     stop("Must specify edges as dataframe")
   }
@@ -20,18 +22,30 @@ cleanGraph <- function(edges, nodes = NULL){
 #   }
 
   if (is.null(nodes$x) || is.null(nodes$y)){
-    message("No node x position provided: using automatic")
+    message("No node position provided: using automatic")
     positions <- FALSE
+  }
+
+  if(!is.null(nodeSizeVar)){
+  nodes$size <- nodes[[nodeSizeVar]]
+  }else{
+    nodeSizeVar <- "size"
   }
 
   if (is.null(nodes$size)){
     message("No node size provided: using random value")
     nodes$size <- 1
+  }else{
+    vars$size <- nodeSizeVar
   }
 
   if (is.null(nodes$color)){
     message("No node color provided: using default")
     nodes$color <- "#FE34A0"
+  }
+
+  if(is.null(nodes$label)){
+    nodes$label <- nodes$id
   }
 
 #   if (is.null(nodes$type)){
@@ -53,7 +67,7 @@ cleanGraph <- function(edges, nodes = NULL){
     edges$size <- 1
   }
   if (is.null(edges$label)){
-    message("No label provided")
+    message("No edge label provided")
     edges$label <- ""
   }
 
@@ -71,7 +85,7 @@ cleanGraph <- function(edges, nodes = NULL){
 #     as.list(r)
 #   })
 
-  g <- list(nodes=nodes, edges=edges, positions = positions)
+  g <- list(nodes=nodes, edges=edges, positions = positions, vars = vars)
   data <- g
   data
 }
