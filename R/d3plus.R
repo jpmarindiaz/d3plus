@@ -21,7 +21,9 @@ d3plus <- function(d, type, width = NULL, height = NULL,...) {
       data <- cleanGraph(edges)
     else{
       data <- cleanGraph(edges, nodes = args$nodes,
-                         nodeSizeVar = args$nodeSizeVar)
+                         nodeSizeVar = args$nodeSizeVar,
+                         nodeColorVar = args$nodeColorVar,
+                         palette = args$palette)
     }
   }
 

@@ -21,36 +21,6 @@ d3plus(bubbles[c(2,3)], "tree")
 
 
 
-# Some networks
-edges <- read.csv(system.file("data/edges.csv", package = "d3plus"))
-nodes <- read.csv(system.file("data/nodes.csv", package = "d3plus"))
-#nodes$color <- sample(substr(rainbow(5),1,7),nrow(nodes),replace = TRUE)
-
-d3plus(edges, "rings", nodes = nodes)
-d3plus(edges, "rings", nodes = nodes, focusDropdown = TRUE)
-d3plus(edges,"rings")
-d3plus(edges, "rings", focusDropdown = TRUE)
-d3plus(edges,"network")
-d3plus(edges,"network",nodes = nodes, lang = "es_ES")
-
-
-###
-
-edges <- read.csv(system.file("data/edges-prod.csv", package = "d3plus"))
-nodes <- read.csv(system.file("data/nodes-prod.csv", package = "d3plus"))
-nodes$label <- nodes$description
-nodes$color <- sample(substr(rainbow(12),1,7),nrow(nodes),replace = TRUE)
-d <- edges
-type <- "network"
-d3plus(edges,"network",nodes = nodes, nodeSizeVar = "group")
-d3plus(edges,"network",nodes = nodes)
-d3plus(d,type)
-
-
-# Some networks
-edg <- read.csv(system.file("data/edges.csv", package = "d3plus"))
-d3plus(edg, "network")
-
 
 
 # Grouping bubbles with color

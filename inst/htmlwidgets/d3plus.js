@@ -195,7 +195,7 @@ HTMLWidgets.widget({
                 "arrows": false,
                 "label":"label",
                 "size": "size",
-                "color": "#A40"
+                "color": "#CCC"
                 };           
             var focus = {
                 "tooltip" : true,

@@ -1,10 +1,10 @@
-id,size,color
-alpha,10,"#F0A493"
-beta,12,"#F0A493"
-gamma,30,"#F00493"
-delta,26,"#F00493"
-epsilon,12,"#F0A493"
-zeta,26,"#F0A403"
-theta,11,"#F0A403"
-eta,24,"#F0A403"
+id,size,group,color
+alpha,10,A,"#F0A493"
+beta,12,A,"#F0A493"
+gamma,30,B,"#F00493"
+delta,26,C,"#F00493"
+epsilon,12,A,"#F0A493"
+zeta,26,B,"#F0A403"
+theta,11,B,"#F0A403"
+eta,24,A,"#F0A403"
 
