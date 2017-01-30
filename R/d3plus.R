@@ -20,10 +20,13 @@ d3plus <- function(d, type, width = NULL, height = NULL,...) {
     if(is.null(args$nodes))
       data <- cleanGraph(edges)
     else{
+      noSingleNoes <- FALSE
+      if(type == "rings") noSingleNodes <- TRUE
       data <- cleanGraph(edges, nodes = args$nodes,
                          nodeSizeVar = args$nodeSizeVar,
                          nodeColorVar = args$nodeColorVar,
-                         palette = args$palette)
+                         palette = args$palette,
+                         noSingleNodes = noSingleNodes)
     }
   }
 

@@ -2,7 +2,8 @@
 cleanGraph <- function(edges, nodes = NULL,
                        nodeSizeVar = NULL,
                        nodeColorVar = NULL,
-                       palette = NULL){
+                       palette = NULL,
+                       noSingleNodes = TRUE){
   vars <- list()
 
   if (is.null(edges)){
@@ -13,7 +14,12 @@ cleanGraph <- function(edges, nodes = NULL,
     message("No nodes provided: taking nodes from edges list")
     n <- unique(c(as.character(edges$source), as.character(edges$target)))
     nodes <- data.frame(id = n)
+  } else{
+    if(class(c(edges$source,edges$target)) != class(nodes$id))
+      stop("Class of edges and nodes must be the same")
+
   }
+
 
   if (is.null(nodes$id)){
     stop("No node id provided")
@@ -77,6 +83,11 @@ cleanGraph <- function(edges, nodes = NULL,
   if (is.null(edges$label)){
     message("No edge label provided")
     edges$label <- ""
+  }
+
+  if(noSingleNodes){
+    nodesInEdges <- nodes$id[nodes$id %in% c(edges$source,edges$target)]
+    nodes <- nodes %>% filter(id %in% nodesInEdges)
   }
 
   #   if (is.null(edges$type)){
