@@ -3,9 +3,10 @@ cleanGraph <- function(edges, nodes = NULL,
                        nodeSizeVar = NULL,
                        nodeColorVar = NULL,
                        palette = NULL,
-                       noSingleNodes = TRUE){
+                       noSingleNodes = NULL){
   vars <- list()
 
+  noSingleNodes <- noSingleNodes %||% TRUE
   if (is.null(edges)){
     stop("Must specify edges as dataframe")
   }

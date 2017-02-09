@@ -26,7 +26,7 @@ d3plus <- function(d, type, width = NULL, height = NULL,...) {
                          nodeSizeVar = args$nodeSizeVar,
                          nodeColorVar = args$nodeColorVar,
                          palette = args$palette,
-                         noSingleNodes = noSingleNodes)
+                         noSingleNodes = args$noSingleNodes)
     }
   }
 

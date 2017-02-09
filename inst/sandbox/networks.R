@@ -2,6 +2,19 @@
 devtools::install()
 library(d3plus)
 
+
+#
+
+edges <- readr::read_csv("~/Desktop/edges.csv")
+nodes <- readr::read_csv("~/Desktop/nodes.csv")
+nodes$color <- sample(substr(rainbow(12),1,7),nrow(nodes),replace = TRUE)
+class(edges)
+d <- edges
+type <- "network"
+d3plus(edges,"network",nodes = nodes, nodeSizeVar = "group")
+d3plus(edges,"network",nodes = nodes)
+d3plus(d,type)
+
 # Some networks
 edges <- read.csv(system.file("data/edges.csv", package = "d3plus"))
 nodes <- read.csv(system.file("data/nodes.csv", package = "d3plus"))

@@ -8,7 +8,8 @@ Description: R Htmlwidget for d3plus (http://d3plus.org)
 Depends:
     R (>= 3.0.0),
     reshape2,
-    htmlwidgets
+    htmlwidgets,
+    tidyverse
 License: MIT + file LICENSE
 LazyData: true
 RoxygenNote: 5.0.1
