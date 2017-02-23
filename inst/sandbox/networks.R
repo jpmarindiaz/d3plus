@@ -11,9 +11,13 @@ nodes$color <- sample(substr(rainbow(12),1,7),nrow(nodes),replace = TRUE)
 class(edges)
 d <- edges
 type <- "network"
-d3plus(edges,"network",nodes = nodes, nodeSizeVar = "group")
-d3plus(edges,"network",nodes = nodes)
+d3plus(edges,"network",nodes = nodes,focus = "c10")
+
 d3plus(d,type)
+d3plus(d,type)
+d3plus(edges,"network",nodes = nodes, nodeSizeVar = "group")
+
+
 
 # Some networks
 edges <- read.csv(system.file("data/edges.csv", package = "d3plus"))
@@ -53,4 +57,26 @@ d3plus(d,type)
 edg <- read.csv(system.file("data/edges.csv", package = "d3plus"))
 d3plus(edg, "network")
 
+
+
+
+# A nice shiny app
+library(shiny)
+app <- shinyApp(
+  ui = bootstrapPage(
+    verbatimTextOutput("clickedNode"),
+    d3plusOutput("viz")
+  ),
+  server = function(input, output) {
+    edges <- read.csv(system.file("data/edges.csv", package = "d3plus"))
+    nodes <- read.csv(system.file("data/nodes.csv", package = "d3plus"))
+    output$viz <- renderD3plus({
+      d3plus(edges,"network",nodes = nodes, nodeColorVar = "group")
+    })
+    output$clickedNode <- renderPrint(
+      #input$d3plus_clicked_node
+    )
+  }
+)
+runApp(app)
 

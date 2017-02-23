@@ -31,6 +31,7 @@ d3plus <- function(d, type, width = NULL, height = NULL,...) {
   }
 
   focusDropdown <- args$focusDropdown %||% FALSE
+  focus <-  args$focus
   lang <- args$lang %||% "en_US"
   showLegend <- args$showLegend %||% FALSE
   attributes <- args$attributes %||% NULL
@@ -87,7 +88,8 @@ d3plus <- function(d, type, width = NULL, height = NULL,...) {
       drawNodes = drawNodes,
       focusDropdown = focusDropdown,
       lang = lang,
-      showLegend = showLegend
+      showLegend = showLegend,
+      focus = focus
     )
   }
 

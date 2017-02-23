@@ -1,3 +1,6 @@
+
+fct_to_chr <- function(d) map_if(d,is.factor,as.character) %>% as_data_frame
+
 #' @export
 `%||%` <- function (x, y)
 {

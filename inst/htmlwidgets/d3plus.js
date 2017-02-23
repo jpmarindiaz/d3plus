@@ -127,7 +127,7 @@ HTMLWidgets.widget({
 
         function draw_network(el,x,d3plus){
             var nodes = HTMLWidgets.dataframeToD3(x.data.nodes);
-            console.log(nodes);
+            console.log(x);
             var edges = HTMLWidgets.dataframeToD3(x.data.edges);
             var positions = x.data.positions;
             var vars = x.data.vars;
@@ -137,6 +137,7 @@ HTMLWidgets.widget({
             	var text = "label"
             }
             var lang = x.settings.lang || "en_US"; // "zh_CN","en_US","es_ES","pt_BR" 
+            var focus = x.settings.focus;
             var showLegend = x.settings.showLegend || false        
             var edgesProps = {
                 "arrows": false,
@@ -162,6 +163,12 @@ HTMLWidgets.widget({
                 .tooltip({connections: true})
                 .legend({value: showLegend, data:false, text: "group"})
                 .format(lang)
+                .focus(focus, function(node_id){
+                    // console.log(node_id)
+                    if (typeof Shiny != "undefined") {
+                        Shiny.onInputChange('d3plus_clicked_node', node_id)
+                    }
+                })
                 .draw()
             }
 

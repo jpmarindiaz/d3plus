@@ -6,6 +6,8 @@ cleanGraph <- function(edges, nodes = NULL,
                        noSingleNodes = NULL){
   vars <- list()
 
+  edges <- fct_to_chr(edges)
+
   noSingleNodes <- noSingleNodes %||% TRUE
   if (is.null(edges)){
     stop("Must specify edges as dataframe")
@@ -16,11 +18,11 @@ cleanGraph <- function(edges, nodes = NULL,
     n <- unique(c(as.character(edges$source), as.character(edges$target)))
     nodes <- data.frame(id = n)
   } else{
-    if(class(c(edges$source,edges$target)) != class(nodes$id))
-      stop("Class of edges and nodes must be the same")
-
+    nodes$id <- as.character(nodes$id)
   }
-
+  nodes <- fct_to_chr(nodes)
+  if(class(c(edges$source,edges$target)) != class(nodes$id))
+    stop("Class of edges and nodes must be the same")
 
   if (is.null(nodes$id)){
     stop("No node id provided")
