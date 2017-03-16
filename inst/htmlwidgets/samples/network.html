@@ -53,5 +53,8 @@
     .edges(connections) // list of node connections
     .size("size")       // key to size the nodes
     .id("name")         // key for which our data is unique on
+    .focus({"tooltip":false},function(node_id) {
+                    console.log(node_id)
+                })
     .draw()             // finally, draw the visualization!
 </script>

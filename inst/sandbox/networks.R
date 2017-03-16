@@ -24,6 +24,10 @@ edges <- read.csv(system.file("data/edges.csv", package = "d3plus"))
 nodes <- read.csv(system.file("data/nodes.csv", package = "d3plus"))
 
 d3plus(edges,"network")
+d3plus(edges,"network", showTooltip = FALSE)
+d3plus(edges,"network", focus = "gamma")
+d3plus(edges,"network", focus = "gamma",showTooltip = FALSE)
+
 d3plus(edges,"network",nodes = nodes)
 nodes$color <- NULL
 d3plus(edges,"network",nodes = nodes, nodeColorVar = "group")
@@ -74,7 +78,7 @@ app <- shinyApp(
       d3plus(edges,"network",nodes = nodes, nodeColorVar = "group")
     })
     output$clickedNode <- renderPrint(
-      #input$d3plus_clicked_node
+      input$d3plus_clicked_node
     )
   }
 )

@@ -31,9 +31,10 @@ d3plus <- function(d, type, width = NULL, height = NULL,...) {
   }
 
   focusDropdown <- args$focusDropdown %||% FALSE
-  focus <-  args$focus
+  focus <-  args$focus %||% FALSE
   lang <- args$lang %||% "en_US"
   showLegend <- args$showLegend %||% FALSE
+  showTooltip <- args$showTooltip %||% TRUE
   attributes <- args$attributes %||% NULL
 
   if(type == "tree"){
@@ -89,6 +90,7 @@ d3plus <- function(d, type, width = NULL, height = NULL,...) {
       focusDropdown = focusDropdown,
       lang = lang,
       showLegend = showLegend,
+      showTooltip = showTooltip,
       focus = focus
     )
   }
@@ -98,6 +100,7 @@ d3plus <- function(d, type, width = NULL, height = NULL,...) {
     settings = settings,
     d3plusType = type
   )
+  if(!is.null(args$debug)) str(x)
 
   htmlwidgets::createWidget(
     name = "d3plus",
