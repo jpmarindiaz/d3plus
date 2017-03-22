@@ -6,7 +6,12 @@ library(d3plus)
 #
 
 edges <- readr::read_csv("~/Desktop/edges.csv")
+edges <- read.csv("~/Desktop/edges.csv")
 nodes <- readr::read_csv("~/Desktop/nodes.csv")
+
+d3plus(edges,"network")
+d3plus(edges,"network",nodes = nodes)
+
 nodes$color <- sample(substr(rainbow(12),1,7),nrow(nodes),replace = TRUE)
 class(edges)
 d <- edges

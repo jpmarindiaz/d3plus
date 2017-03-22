@@ -7,6 +7,7 @@ cleanGraph <- function(edges, nodes = NULL,
   vars <- list()
 
   edges <- fct_to_chr(edges)
+  edges <- num_to_chr(edges)
 
   noSingleNodes <- noSingleNodes %||% TRUE
   if (is.null(edges)){
