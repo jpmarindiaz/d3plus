@@ -38,7 +38,7 @@ d3plus <- function(d, type, width = NULL, height = NULL,...) {
   attributes <- args$attributes %||% NULL
 
   if(type == "tree"){
-    vars <- c("id","size","color") # add vars to opts
+    vars <- c("id","size","color","url") # add vars to opts
     data_names <- as.list(names(data))
     names(data_names) <- vars[1:length(data_names)]
     settings <- list(
