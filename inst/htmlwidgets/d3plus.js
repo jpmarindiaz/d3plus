@@ -52,15 +52,14 @@ HTMLWidgets.widget({
             var mouse_opt;
             if (sample_data[0].hasOwnProperty('url')) {
               mouse_opt = {"move": false,
-                               "over": false,
-                               "click": function(value, viz){
-                                           window.open(value.url, '_blank');
-                                         }
+                           "over": false,
+                           "click": function(value, viz){
+                                       window.open(value.url, '_blank');
+                                     }
                           };
               color_opt = false; // switch off legend when using URL
-
             } else {
-              mouse_opt = true;
+              mouse_opt = true; // maintain default when url missing
             }
 
             d3plus
@@ -72,7 +71,7 @@ HTMLWidgets.widget({
                 .color(color)
                 .mouse(mouse_opt)
                 .legend(color_opt) // in future, better to enable legend attribute
-                .draw()
+                .draw();
         }
 
         function draw_lines(el, x, d3plus) {
