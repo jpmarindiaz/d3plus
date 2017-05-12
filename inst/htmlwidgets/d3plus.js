@@ -45,6 +45,24 @@ HTMLWidgets.widget({
             var id = x.settings.data_names.id;
             var size = x.settings.data_names.size;
             var color = x.settings.data_names.color;
+
+            // include legend when color supplied
+            var color_opt = (sample_data[0].hasOwnProperty('color')) ? true : false;
+
+            var mouse_opt;
+            if (sample_data[0].hasOwnProperty('url')) {
+              mouse_opt = {"move": false,
+                               "over": false,
+                               "click": function(value, viz){
+                                           window.open(value.url, '_blank');
+                                         }
+                          };
+              color_opt = false; // switch off legend when using URL
+
+            } else {
+              mouse_opt = true;
+            }
+
             d3plus
                 .container("#" + vizId) // container DIV to hold the visualization
                 .data(sample_data) // data to use with the visualization
@@ -52,6 +70,8 @@ HTMLWidgets.widget({
                 .id(id) // nesting keys
                 .size(size) // key name to size bubbles
                 .color(color)
+                .mouse(mouse_opt)
+                .legend(color_opt) // in future, better to enable legend attribute
                 .draw()
         }
 
@@ -140,7 +160,7 @@ HTMLWidgets.widget({
             } else {
                 var text = "label"
             }
-            var lang = x.settings.lang || "en_US"; // "zh_CN","en_US","es_ES","pt_BR" 
+            var lang = x.settings.lang || "en_US"; // "zh_CN","en_US","es_ES","pt_BR"
             var focus = x.settings.focus || false;
             var showTooltip = x.settings.showTooltip;
             if(!showTooltip){
@@ -164,7 +184,7 @@ HTMLWidgets.widget({
                 .size(vars.size)
                 .id(["id"])
                 // https://groups.google.com/forum/#!topic/d3plus/q4iXv0rpzQo
-                // .text("label")  
+                // .text("label")
                 // .id(["group","id"])
                 .text(text)
                 .tooltip(["id", "label"])
@@ -201,7 +221,7 @@ HTMLWidgets.widget({
             }
             console.log(x.data)
             var focusDropdown = x.settings.focusDropdown;
-            var lang = x.settings.lang || "en_US"; // "zh_CN","en_US","es_ES","pt_BR" 
+            var lang = x.settings.lang || "en_US"; // "zh_CN","en_US","es_ES","pt_BR"
             var showLegend = x.settings.showLegend || false
             var ui = [];
             if (focusDropdown) {
