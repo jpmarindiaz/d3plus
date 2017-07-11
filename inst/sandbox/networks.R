@@ -6,6 +6,11 @@ library(d3plus)
 edges <- readr::read_csv("~/Desktop/edges.csv")
 edges$source[sample(nrow(edges),3)] <- NA
 edges <- read.csv("~/Desktop/edges.csv")
+edges$label <- sample(letters, nrow(edges), replace = TRUE)
+
+d3plus(edges[1:30,],"network")
+
+
 nodes <- readr::read_csv("~/Desktop/nodes.csv")
 
 d3plus(edges,"network")
