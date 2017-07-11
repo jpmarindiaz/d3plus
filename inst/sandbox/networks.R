@@ -3,9 +3,8 @@ devtools::install()
 library(d3plus)
 
 
-#
-
 edges <- readr::read_csv("~/Desktop/edges.csv")
+edges$source[sample(nrow(edges),3)] <- NA
 edges <- read.csv("~/Desktop/edges.csv")
 nodes <- readr::read_csv("~/Desktop/nodes.csv")
 

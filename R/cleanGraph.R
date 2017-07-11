@@ -6,6 +6,7 @@ cleanGraph <- function(edges, nodes = NULL,
                        noSingleNodes = NULL){
   vars <- list()
 
+  edges <- edges %>% filter(!is.na(source), !is.na(target))
   edges <- fct_to_chr(edges)
   edges <- num_to_chr(edges)
 
