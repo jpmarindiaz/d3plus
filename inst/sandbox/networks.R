@@ -3,28 +3,6 @@ devtools::install()
 library(d3plus)
 
 
-edges <- readr::read_csv("~/Desktop/edges.csv")
-edges$source[sample(nrow(edges),3)] <- NA
-edges <- read.csv("~/Desktop/edges.csv")
-edges$label <- sample(letters, nrow(edges), replace = TRUE)
-
-d3plus(edges[1:30,],"network")
-
-
-nodes <- readr::read_csv("~/Desktop/nodes.csv")
-
-d3plus(edges,"network")
-d3plus(edges,"network",nodes = nodes)
-
-nodes$color <- sample(substr(rainbow(12),1,7),nrow(nodes),replace = TRUE)
-class(edges)
-d <- edges
-type <- "network"
-d3plus(edges,"network",nodes = nodes,focus = "c10")
-
-d3plus(d,type)
-d3plus(d,type)
-d3plus(edges,"network",nodes = nodes, nodeSizeVar = "group")
 
 
 
@@ -32,10 +10,15 @@ d3plus(edges,"network",nodes = nodes, nodeSizeVar = "group")
 edges <- read.csv(system.file("data/edges.csv", package = "d3plus"))
 nodes <- read.csv(system.file("data/nodes.csv", package = "d3plus"))
 
+d3plus(edges,"rings", focus = "gamma")
+
 d3plus(edges,"network")
+edges$label <- sample(letters, nrow(edges))
 d3plus(edges,"network", showTooltip = FALSE)
 d3plus(edges,"network", focus = "gamma")
+d3plus(edges,"network", focus = "a-b")
 d3plus(edges,"network", focus = "gamma",showTooltip = FALSE)
+
 
 d3plus(edges,"network",nodes = nodes)
 nodes$color <- NULL
@@ -92,4 +75,34 @@ app <- shinyApp(
   }
 )
 runApp(app)
+
+
+
+
+## notes
+
+edges <- readr::read_csv("~/Desktop/edges.csv")
+edges$source[sample(nrow(edges),3)] <- NA
+edges <- read.csv("~/Desktop/edges.csv")
+edges$label <- sample(letters, nrow(edges), replace = TRUE)
+
+d3plus(edges[1:30,],"network")
+
+
+nodes <- readr::read_csv("~/Desktop/nodes.csv")
+
+d3plus(edges,"network")
+d3plus(edges,"network",nodes = nodes)
+
+nodes$color <- sample(substr(rainbow(12),1,7),nrow(nodes),replace = TRUE)
+class(edges)
+d <- edges
+type <- "network"
+d3plus(edges,"network",nodes = nodes,focus = "c10")
+
+d3plus(d,type)
+d3plus(d,type)
+d3plus(edges,"network",nodes = nodes, nodeSizeVar = "group")
+
+
 

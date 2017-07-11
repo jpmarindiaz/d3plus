@@ -187,6 +187,7 @@ HTMLWidgets.widget({
         }
 
         function draw_rings(el, x, d3plus) {
+            console.log(x);
             var nodes = HTMLWidgets.dataframeToD3(x.data.nodes);
             var edges = HTMLWidgets.dataframeToD3(x.data.edges);
             var positions = x.data.positions;
@@ -199,9 +200,9 @@ HTMLWidgets.widget({
             } else {
                 var text = "label"
             }
-            console.log(x.data)
             var focusDropdown = x.settings.focusDropdown;
             var lang = x.settings.lang || "en_US"; // "zh_CN","en_US","es_ES","pt_BR" 
+            var focus = x.settings.focus || false;
             var showLegend = x.settings.showLegend || false
             var ui = [];
             if (focusDropdown) {
@@ -223,7 +224,7 @@ HTMLWidgets.widget({
             };
             var focus = {
                 "tooltip": true,
-                "value": nodes[0].id
+                "value": focus
             };
             var tooltip = {
                 "html": "<h1>Tootltip</h1>"
@@ -238,7 +239,6 @@ HTMLWidgets.widget({
                 .color("color")
                 .size(vars.size)
                 .id(["id"])
-                .focus(focus)
                 .text(text)
                 .tooltip(["id", "label"])
                 .tooltip({
@@ -250,6 +250,7 @@ HTMLWidgets.widget({
                     text: "group"
                 })
                 .format(lang)
+                .focus(focus)
                 .ui(ui)
                 .draw()
         }
