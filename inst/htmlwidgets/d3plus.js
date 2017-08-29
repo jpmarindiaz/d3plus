@@ -145,6 +145,10 @@ HTMLWidgets.widget({
             var showTooltip = x.settings.showTooltip;
             if(!showTooltip){
                 focus = {"tooltip": false, "focus": focus};
+                tooltip = {
+                    "value": false,
+                    "connections": true
+                }
             };
             var showLegend = x.settings.showLegend || false;
             var edgesProps = {
@@ -168,9 +172,7 @@ HTMLWidgets.widget({
                 // .id(["group","id"])
                 .text(text)
                 .tooltip(["id", "label"])
-                .tooltip({
-                    connections: true
-                })
+                .tooltip(tooltip)
                 .legend({
                     value: showLegend,
                     data: false,
