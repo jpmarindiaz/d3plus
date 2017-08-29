@@ -143,12 +143,13 @@ HTMLWidgets.widget({
             var lang = x.settings.lang || "en_US"; // "zh_CN","en_US","es_ES","pt_BR" 
             var focus = x.settings.focus || false;
             var showTooltip = x.settings.showTooltip;
-            if(!showTooltip){
-                focus = {"tooltip": false, "focus": focus};
-                tooltip = {
-                    "value": false,
+            var tooltip = {
+                    "value": true,
                     "connections": true
                 }
+            if(!showTooltip){
+                focus = {"tooltip": false, "focus": focus};
+                tooltip.value = false;
             };
             var showLegend = x.settings.showLegend || false;
             var edgesProps = {
